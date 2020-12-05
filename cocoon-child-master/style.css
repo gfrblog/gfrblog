@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+/*!
+Theme Name: Cocoon Child
+Description: Cocoon専用の子テーマ
+Theme URI: https://wp-cocoon.com/
+Author: わいひら
+Author URI: https://nelog.jp/
+Template:   cocoon-master
+Version:    1.1.2
+*/
+
+/************************************
+** 子テーマ用のスタイルを書く
+************************************/
+/*必要ならばここにコードを書く*/
+
+/* ヘッダー位置固定 */
+#header-container {
+  box-shadow: 0 0 10px rgba(30, 30, 30, .1);
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+
+/* ロゴの大きさ・幅に関するもの */
+.header-container-in.hlt-top-menu .logo-header img {
+  max-width: 65%;
+  vertical-align: middle;
+  margin-left: 1vw;
+}
+
+/* グローバルメニューの設定 */
+.navi-in > ul .sub-menu {
+  background: #fff;
+  box-shadow: 0 0 10px rgba(30, 30, 30, .1);
+}
+.navi-in > ul li {
+  width: auto;
+}
+.navi-in a {
+  font-size: 13px; /* ナビ文字大きさ */
+  font-weight: bold;
+  position: relative;
+  color: #fff; /* ナビ文字色 */
+  padding: 0 20px;
+  display: block;
+  text-decoration: none;
+}
+.navi-in a:hover {
+  background: none;
+}
+.navi-in a:before {
+  position: absolute;
+  left: 0;
+  bottom: 6px;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #fff; /* マウスON時の下線色 */
+  transform: scale(0, 1);
+  transition: 0.4s;
+}
+.navi-in a:hover:before {
+  transform: scale(1);
+}
+.navi-in > ul .sub-menu a {
+  color: #666; /* サブメニュー文字色 */
+  font-size: 12px; /* サブメニュー文字の大きさ */
+}
+.navi-in > ul .sub-menu a:before {
+  background: #42d5e7; /* サブメニューマウスON時の下線色 */
+}
+[id^="toc"]:target {
+  padding-top: 85px;
+  margin-top: -85px;
+}
+
+
+/************************************
+** レスポンシブデザイン用のメディアクエリ
+************************************/
+/*1023px以下*/
+@media screen and (max-width: 1023px){
+  /*必要ならばここにコードを書く*/
+}
+
+/*834px以下*/
+@media screen and (max-width: 834px){
+  /*必要ならばここにコードを書く*/
+}
+
+/*480px以下*/
+@media screen and (max-width: 480px){
+  /*必要ならばここにコードを書く*/
+}
