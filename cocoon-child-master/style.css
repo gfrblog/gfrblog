@@ -15,6 +15,11 @@ Version:    1.1.2
 ************************************/
 /*必要ならばここにコードを書く*/
 
+/*アピールエリアの背景色(git管理のtest)*/
+.appeal-content {background: #1e73be;}
+.appeal-title{background: #de6596; color: #fff;}
+.appeal-message {background: #b2ca7e; color: #fff;}
+
 /* ヘッダー位置固定 */
 #header-container {
   box-shadow: 0 0 10px rgba(30, 30, 30, .1);
