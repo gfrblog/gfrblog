@@ -25,58 +25,53 @@ Version:    1.1.2
   z-index: 10;
 }
 
-/* ロゴの大きさ・幅に関するもの */
+/* ロゴ */
+/*大きさ */
 .header-container-in.hlt-top-menu .logo-header img {
-  max-width: 65%;
+  max-width: 70%;
   vertical-align: middle;
-  margin-left: 1vw;
+}
+/* 横幅 */
+.header.ba-fixed.cf::before {
+  margin-left: 30vw;
+  height: 0;
+  content: "";
+  display: block;
+  z-index: 100;
 }
 
 /* グローバルメニューの設定 */
-.navi-in > ul .sub-menu {
-  background: #fff;
-  box-shadow: 0 0 10px rgba(30, 30, 30, .1);
+#navi {
+  width: 55%; /* メニューが横一列かつ文字も改行されない最小サイズ */
 }
-.navi-in > ul li {
-  width: auto;
+
+#navi .navi-in > ul > li {
+  width: 16.5%;
 }
+
 .navi-in a {
-  font-size: 13px; /* ナビ文字大きさ */
+  font-size: 1vw; /* ナビ文字大きさ */
   font-weight: bold;
   position: relative;
   color: #fff; /* ナビ文字色 */
-  padding: 0 20px;
   display: block;
   text-decoration: none;
+  margin: 0 0;
 }
-.navi-in a:hover {
-  background: none;
-}
-.navi-in a:before {
+
+.navi-in a::before {
   position: absolute;
-  left: 0;
-  bottom: 6px;
+  bottom: 30%;
   content: "";
   display: block;
   width: 100%;
-  height: 3px;
+  height: 3%;
   background: #fff; /* マウスON時の下線色 */
   transform: scale(0, 1);
   transition: 0.4s;
 }
-.navi-in a:hover:before {
+.navi-in a:hover::before {
   transform: scale(1);
-}
-.navi-in > ul .sub-menu a {
-  color: #666; /* サブメニュー文字色 */
-  font-size: 12px; /* サブメニュー文字の大きさ */
-}
-.navi-in > ul .sub-menu a:before {
-  background: #42d5e7; /* サブメニューマウスON時の下線色 */
-}
-[id^="toc"]:target {
-  padding-top: 85px;
-  margin-top: -85px;
 }
 
 
