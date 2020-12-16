@@ -16,19 +16,27 @@ Version:    1.1.2
 /*必要ならばここにコードを書く*/
 
 /* ヘッダー位置固定 */
-/* #header-container {
-  box-shadow: 0 0 10px rgba(30, 30, 30, .1);
-  position: fixed;
+#header-container {
+  /* box-shadow: 0 0 10px rgba(30, 30, 30, .1); */
+  /* position: fixed; */
+  height: 4vh;
   left: 0;
   top: 0;
   right: 0;
   z-index: 10;
+}
+#header-container-in, #navi, #navi-in, #menu-headermenu{
+  height: 100%;
+}
+
+/* #navi-in {
+  height: 100%;
 } */
 
 /* ロゴ */
 /*大きさ */
 .header-container-in.hlt-top-menu .logo-header img {
-  max-width: 70%;
+  max-width: 60%;
   vertical-align: middle;
 }
 /* 横の空白 */
@@ -37,22 +45,21 @@ Version:    1.1.2
 }
 
 /* グローバルメニューの設定 */
+
+/* 各メニューの幅①と②を調整する*/
 #navi-in {
   padding: 0 0;
   margin: 0 5%;
-  width: 90%; /* メニューが横一列かつ文字も改行されない最小サイズ */
+  width: 90%; /* ①メニュー全体の幅 */
 }
-/* 
-#menu-headermenu {
-  left: 15vw;
-} */
-
-
 #navi .navi-in > ul > li {
-  width: 16.5%;
+  height: 100%;
+  width: 16.5%; /* ②メニューの各要素の幅 */
 }
 
+/* メニューのデザイン */
 .navi-in a {
+  height: 100%;
   font-size: 0.8vw; /* ナビ文字大きさ */
   font-weight: bold;
   position: relative;
@@ -61,7 +68,6 @@ Version:    1.1.2
   text-decoration: none;
   margin: 0 0;
 }
-
 .navi-in a::before {
   position: absolute;
   bottom: 30%;
@@ -77,6 +83,19 @@ Version:    1.1.2
   transform: scale(1);
 }
 
+/* メニューの文字位置を上下中央にする */
+.caption-wrap {
+  position: relative;
+  height: 100%;
+}
+.item-label{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit- transform: translateY(-50%) translateX(-50%);
+}
 
 /************************************
 ** レスポンシブデザイン用のメディアクエリ
