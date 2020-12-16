@@ -16,14 +16,14 @@ Version:    1.1.2
 /*必要ならばここにコードを書く*/
 
 /* ヘッダー位置固定 */
-#header-container {
+/* #header-container {
   box-shadow: 0 0 10px rgba(30, 30, 30, .1);
   position: fixed;
   left: 0;
   top: 0;
   right: 0;
   z-index: 10;
-}
+} */
 
 /* ロゴ */
 /*大きさ */
@@ -31,26 +31,29 @@ Version:    1.1.2
   max-width: 70%;
   vertical-align: middle;
 }
-/* 横幅 */
-.header.ba-fixed.cf::before {
-  margin-left: 30vw;
-  height: 0;
-  content: "";
-  display: block;
-  z-index: 100;
+/* 横の空白 */
+.header.ba-fixed.cf {
+  margin-left: 5%;
 }
 
 /* グローバルメニューの設定 */
-#navi {
-  width: 55%; /* メニューが横一列かつ文字も改行されない最小サイズ */
+#navi-in {
+  padding: 0 0;
+  margin: 0 5%;
+  width: 90%; /* メニューが横一列かつ文字も改行されない最小サイズ */
 }
+/* 
+#menu-headermenu {
+  left: 15vw;
+} */
+
 
 #navi .navi-in > ul > li {
   width: 16.5%;
 }
 
 .navi-in a {
-  font-size: 1vw; /* ナビ文字大きさ */
+  font-size: 0.8vw; /* ナビ文字大きさ */
   font-weight: bold;
   position: relative;
   color: #fff; /* ナビ文字色 */
@@ -86,9 +89,18 @@ Version:    1.1.2
 /*834px以下*/
 @media screen and (max-width: 834px){
   /*必要ならばここにコードを書く*/
+
+  /* ロゴ横の空白 */
+  .header.ba-fixed.cf {
+    margin-left: 0;
+  }
 }
 
 /*480px以下*/
 @media screen and (max-width: 480px){
   /*必要ならばここにコードを書く*/
+  /* ロゴ横の空白 */
+  .header.ba-fixed.cf {
+    margin-left: 0;
+  }
 }
