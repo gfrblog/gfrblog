@@ -19,24 +19,23 @@ Version:    1.1.2
 #header-container {
   /* box-shadow: 0 0 10px rgba(30, 30, 30, .1); */
   /* position: fixed; */
-  height: 4vh;
+  height: 7vh;
   left: 0;
   top: 0;
   right: 0;
   z-index: 10;
 }
-#header-container-in, #navi, #navi-in, #menu-headermenu{
+#header-container-in, #header-in, #navi, #navi-in, #menu-headermenu{
   height: 100%;
 }
-
-/* #navi-in {
+#header-in > h1, #header-in > h1 > a, #header-in > h1 > a > span{
   height: 100%;
-} */
+}
 
 /* ロゴ */
 /*大きさ */
 .header-container-in.hlt-top-menu .logo-header img {
-  max-width: 60%;
+  max-height: 80%;
   vertical-align: middle;
 }
 /* 横の空白 */
@@ -113,6 +112,9 @@ Version:    1.1.2
   .header.ba-fixed.cf {
     margin-left: 0;
   }
+  #header-container {
+    height: 5vh;
+  }  
 }
 
 /*480px以下*/
@@ -121,5 +123,8 @@ Version:    1.1.2
   /* ロゴ横の空白 */
   .header.ba-fixed.cf {
     margin-left: 0;
+  }
+  #header-container {
+    height: 5vh;
   }
 }
