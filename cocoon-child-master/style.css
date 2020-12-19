@@ -15,6 +15,30 @@ Version:    1.1.2
 ************************************/
 /*必要ならばここにコードを書く*/
 
+/************************************
+** サイト全体に関連
+************************************/
+blockquote{
+  padding: 0;
+  padding-left: 1vw;
+  color: black;/*文字色*/
+  background: transparent;/*背景透明に*/
+  border: none;
+  border-left: solid 4px #339966;/*左線*/
+}
+blockquote:before{ /*上の引用アイコン*/
+  content: '';
+}
+blockquote:after{ /*下の引用アイコン*/
+  content: '';
+}
+#content{
+  margin-top: 0;
+}
+
+/************************************
+** トップページのみに関連
+************************************/
 /* ヘッダー位置固定 */
 #header-container {
   /* box-shadow: 0 0 10px rgba(30, 30, 30, .1); */
@@ -67,6 +91,12 @@ Version:    1.1.2
   text-decoration: none;
   margin: 0 0;
 }
+.navi-in a:hover {
+  background-color:#e4e4e4;
+
+  transition: 0.5s;
+}
+
 .navi-in a::before {
   position: absolute;
   bottom: 30%;
@@ -74,7 +104,7 @@ Version:    1.1.2
   display: block;
   width: 100%;
   height: 3%;
-  background: #fff; /* マウスON時の下線色 */
+  background: black; /* マウスON時の下線色 */
   transform: scale(0, 1);
   transition: 0.4s;
 }
