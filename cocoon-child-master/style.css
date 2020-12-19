@@ -34,8 +34,55 @@ blockquote:after{ /*下の引用アイコン*/
 }
 #content{
   margin-top: 0;
+  background-color: #fff;
+}
+#main{
+  margin: 0 10%;
+}
+#footer{
+  margin-top: 0;
 }
 
+/*SNSボタン編集*/
+/*ボタンを丸くする*/
+#main .button-caption {
+	display: none; /*キャプション非表示*/
+}
+/*シェアボタン*/
+.sns-share-message{
+	font-weight: bold; /*太字*/
+	color: #875d5b; /*文字色*/
+}
+.sns-share-buttons {
+	flex-wrap: nowrap; /*折り返さない*/
+	justify-content: center; /*中央寄せ*/
+}
+.sns-share-buttons a {
+	border-radius: 50%; /*丸くする*/
+	font-size: 20px; /*アイコンのサイズ*/
+	margin: 0 10px; /*ボタン同士の間隔*/
+}
+#main .sns-share a {
+	width: 40px; /*ボタンの横幅*/
+	height: 40px; /*ボタンの高さ*/
+}
+/*フォローボタン*/
+.sns-follow-message{
+	font-weight: bold; /*太字*/
+	color: #875d5b; /*文字色*/
+}
+.sns-follow-buttons {
+	justify-content: center; /*中央寄せ*/
+}
+.sns-follow-buttons a {
+	border-radius: 50%; /*丸くする*/
+	font-size: 20px; /*アイコンのサイズ*/
+	margin: 0 10px; /*ボタン同士の間隔*/
+}
+#main .sns-follow a {
+	width: 40px; /*ボタンの横幅*/
+	height: 40px; /*ボタンの高さ*/
+}
 /************************************
 ** トップページのみに関連
 ************************************/
