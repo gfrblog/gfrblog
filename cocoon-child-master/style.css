@@ -28,7 +28,7 @@ Version:    1.1.2
 #header-container-in, #header-in, #navi, #navi-in, #menu-headermenu{
   height: 100%;
 }
-#header-in > h1, #header-in > h1 > a, #header-in > h1 > a > span{
+#header-in, .logo.logo-header.logo-image, .site-name.site-name-text-link, .site-name-text{
   height: 100%;
 }
 
@@ -114,7 +114,20 @@ Version:    1.1.2
   }
   #header-container {
     height: 5vh;
-  }  
+  }
+  /* ロゴ位置を上下中央にする */
+  .header-in.wrap.cf {
+    position: relative;
+    height: 100%;
+  }
+  .header-container-in.hlt-top-menu .logo-header img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 80%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit- transform: translateY(-50%) translateX(-50%);
+  }
 }
 
 /*480px以下*/
@@ -127,4 +140,3 @@ Version:    1.1.2
   #header-container {
     height: 5vh;
   }
-}
