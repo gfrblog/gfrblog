@@ -43,6 +43,11 @@ blockquote:after{ /*下の引用アイコン*/
 #footer{
   margin-top: 0;
 }
+.eye-catch img{
+  width: 75vw;
+  height: 40vw;
+  object-fit: cover;
+}
 
 /*SNSボタン編集*/
 /*ボタンを丸くする*/
