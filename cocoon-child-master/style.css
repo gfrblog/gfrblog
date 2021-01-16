@@ -21,11 +21,11 @@ Version:    1.1.2
 /* 全体的な設定 */
 #content{
   margin-top: 0;
-  background-color: #fff;
 }
 #main{
   margin: 0 10%;
   width: 80%;
+  background-color: #fff;
 }
 #footer{
   margin-top: 0;
@@ -36,7 +36,84 @@ Version:    1.1.2
   object-fit: cover;
 }
 
+/* 目次設定 */
+.toc{
+  display: block;
+  padding: 0px;
+  margin-bottom: 40px;
+  margin-left: 18%;
+  margin-right: 18%;
+  border: solid 1.2px #339966 !important;
+}
+.toc-title {
+  position: relative;
+  padding:10px 0; /**位置(上下)**/
+  background: #339966; /**背景色**/
+  color: #fff; /**文字色**/
+  font-weight: bold; /**太字*/
+}
+.toc .toc-content{
+  padding: 15px;
+}
+.article .toc-list > li li {
+  list-style: none;
+}
+.toc-list > li li ::before {
+  display: inline-block;
+  position: relative;
+  content: '';
+  width: 5px;
+  height: 5px;
+  left: -20px; /**横(左)の位置**/
+  margin-bottom: 2px; /**下の余白**/
+  border-radius: 100%;
+  background: #97f3c2; /**・の色**/
+}
+
 /* 各タグデザインの設定 */
+.article h2,
+.article h3{ /*見出し初期化*/
+  padding: 0;
+  margin: 0;
+  font-size: medium;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+  line-height: normal;
+  position:relative;
+}
+
+.article h2 {
+  margin-top: 5em;
+  padding: 0.5em;
+  color: #494949;/*文字色*/
+  font-size: 25px;
+  background: #ecfdf4;/*背景色*/
+  border-left: solid 5px #339966;/*左線（実線 太さ 色）*/
+}
+.article h2:first-letter{
+  font-size: 35px;
+}
+
+.article h3 {
+  margin-top: 5em;
+  border-bottom: solid 5px #bafad8;
+  font-size: 20px;
+  position: relative;
+}
+.article h3:after {
+  position: absolute;
+  content: " ";
+  display: block;
+  border-bottom: solid 5px #339966;
+  bottom: -5px;
+  width: 20%;
+}
+
+
 blockquote{
   padding: 0;
   padding-left: 1vw;
