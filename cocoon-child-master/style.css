@@ -16,22 +16,9 @@ Version:    1.1.2
 /*必要ならばここにコードを書く*/
 
 /************************************
-** サイト全体に関連
+** サイト全体のデザイン関連
 ************************************/
-blockquote{
-  padding: 0;
-  padding-left: 1vw;
-  color: black;/*文字色*/
-  background: transparent;/*背景透明に*/
-  border: none;
-  border-left: solid 4px #339966;/*左線*/
-}
-blockquote:before{ /*上の引用アイコン*/
-  content: '';
-}
-blockquote:after{ /*下の引用アイコン*/
-  content: '';
-}
+/* 全体的な設定 */
 #content{
   margin-top: 0;
   background-color: #fff;
@@ -47,6 +34,22 @@ blockquote:after{ /*下の引用アイコン*/
   width: 75vw;
   height: 40vw;
   object-fit: cover;
+}
+
+/* 各タグデザインの設定 */
+blockquote{
+  padding: 0;
+  padding-left: 1vw;
+  color: black;/*文字色*/
+  background: transparent;/*背景透明に*/
+  border: none;
+  border-left: solid 4px #339966;/*左線*/
+}
+blockquote:before{ /*上の引用アイコン*/
+  content: '';
+}
+blockquote:after{ /*下の引用アイコン*/
+  content: '';
 }
 
 /*SNSボタン編集*/
@@ -92,7 +95,7 @@ blockquote:after{ /*下の引用アイコン*/
 
 
 /************************************
-** トップページのみに関連
+** トップページのみのデザイン関連
 ************************************/
 /* ヘッダー位置固定 */
 #header-container {
