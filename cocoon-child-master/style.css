@@ -23,8 +23,9 @@ Version:    1.1.2
   margin-top: 0;
 }
 #main{
-  margin: 0 10%;
-  width: 80%;
+  /* margin: 0 10%;
+  width: 80%; */
+  width: 100%;
   background-color: #fff;
 }
 #footer{
@@ -37,23 +38,23 @@ Version:    1.1.2
 .cat-label {
   background-color: #339966;
   border: 0px!important;
+  padding: 2px 20px;
+  font-size: 15px;
   top: 0em;
   left: 0em;
 }
 .eye-catch .cat-label {
-  padding: 0px 10px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 5px 30px;
   text-align: center;
   opacity: 0.9;
   top: 0em;
   left: 0em;
-  font-size: 13px;
+  font-size: 15px;
   min-width: 120px;
 }
 .eye-catch .cat-label:before {
   font-family: "fontawesome";
-  content: "\f08d";
+  content: "\f040";
   color: #fff;
   display: inline-block;
   margin-right: .5em;
