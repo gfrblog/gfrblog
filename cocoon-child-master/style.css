@@ -34,6 +34,33 @@ Version:    1.1.2
   width: 600px;
   height: auto;
 }
+.cat-label {
+  background-color: #339966;
+  border: 0px!important;
+  top: 0em;
+  left: 0em;
+}
+.eye-catch .cat-label {
+  padding: 0px 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  opacity: 0.9;
+  top: 0em;
+  left: 0em;
+  font-size: 13px;
+  min-width: 120px;
+}
+.eye-catch .cat-label:before {
+  font-family: "fontawesome";
+  content: "\f08d";
+  color: #fff;
+  display: inline-block;
+  margin-right: .5em;
+  transform: rotate(-20deg);
+  -moz-transform: rotate(-20deg);
+  -webkit-transform: rotate(-20deg);
+}
 
 /* 目次設定 */
 .toc{
