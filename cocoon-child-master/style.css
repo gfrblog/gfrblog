@@ -31,8 +31,8 @@ Version:    1.1.2
   margin-top: 0;
 }
 .eye-catch img{
-  width: 75vw;
-  height: 40vw;
+  width: 600px;
+  height: 400px;
   object-fit: cover;
 }
 
