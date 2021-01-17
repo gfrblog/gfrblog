@@ -117,7 +117,6 @@ Version:    1.1.2
 .article h2 {
   margin-top: 5em;
   padding: 0.5em;
-  color: #494949;/*文字色*/
   font-size: 25px;
   background: #ecfdf4;/*背景色*/
   border-left: solid 5px #339966;/*左線（実線 太さ 色）*/
@@ -311,7 +310,7 @@ blockquote:after{ /*下の引用アイコン*/
   left: 50%;
   width: 100%;
   transform: translateY(-50%) translateX(-50%);
-  -webkit- transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
 }
 
 /************************************
@@ -344,7 +343,7 @@ blockquote:after{ /*下の引用アイコン*/
     left: 50%;
     height: 80%;
     transform: translateY(-50%) translateX(-50%);
-    -webkit- transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
   }
 }
 
@@ -358,3 +357,4 @@ blockquote:after{ /*下の引用アイコン*/
   #header-container {
     height: 5vh;
   }
+}

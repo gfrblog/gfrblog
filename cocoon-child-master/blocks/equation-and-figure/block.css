@@ -1,0 +1,58 @@
+.block-equation-figure-wrap{
+  margin-bottom: 5em;
+}
+.block-equation-figure-container{
+  width: 90%;
+  margin: 0 5%;
+  display: table;
+  padding: 0.2em 0.5em;
+  position: relative;
+  padding: 0.5em 1em;
+  border: solid 3px #324851;
+  border-radius: 8px;
+  background: #fdf5eb;
+}
+.equation-figure-container-title {
+  position: absolute;
+  display: inline-block;
+  top: -13px;
+  left: 15px;
+  padding: 0 1%;
+  line-height: 1;
+  font-size: 20px;
+  background: linear-gradient(180deg,#fff 0%,#fff 50%,#fdf5eb 50%,#fdf5eb 100%);
+  color: #324851;
+  font-weight: bold;
+}
+.equation-figure-box{
+  display: table-cell;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.equation-figure-box-left{
+  text-align: center;
+}
+
+/* .equation-figure-box-right{
+  width: 50%;
+} */
+
+.equation-figure-text{
+  text-align: center;
+  font-size: 1.2vw;
+}
+@media (min-width: 1023px) {
+  .equation-figure-text{
+    font-size: 18px;
+  }
+}
+/* @media (max-width: 480px) {
+  .equation-figure-text{
+    font-size: 5px;
+  }
+} */
+
+.equation-figure-caption{
+  top: 10px;
+}
