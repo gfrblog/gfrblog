@@ -230,7 +230,7 @@ blockquote:after{ /*下の引用アイコン*/
 #header-container {
   /* box-shadow: 0 0 10px rgba(30, 30, 30, .1); */
   /* position: fixed; */
-  height: 7vh;
+  height: 50px;
   left: 0;
   top: 0;
   right: 0;
@@ -246,7 +246,7 @@ blockquote:after{ /*下の引用アイコン*/
 /* ロゴ */
 /*大きさ */
 .header-container-in.hlt-top-menu .logo-header img {
-  max-height: 80%;
+  max-height: 50px;
   vertical-align: middle;
 }
 /* 横の空白 */
@@ -270,7 +270,7 @@ blockquote:after{ /*下の引用アイコン*/
 /* メニューのデザイン */
 .navi-in a {
   height: 100%;
-  font-size: 0.8vw; /* ナビ文字大きさ */
+  font-size: 15px; /* ナビ文字大きさ */
   font-weight: bold;
   position: relative;
   color: #fff; /* ナビ文字色 */
@@ -329,9 +329,6 @@ blockquote:after{ /*下の引用アイコン*/
   .header.ba-fixed.cf {
     margin-left: 0;
   }
-  #header-container {
-    height: 5vh;
-  }
   /* ロゴ位置を上下中央にする */
   .header-in.wrap.cf {
     position: relative;
@@ -353,8 +350,5 @@ blockquote:after{ /*下の引用アイコン*/
   /* ロゴ横の空白 */
   .header.ba-fixed.cf {
     margin-left: 0;
-  }
-  #header-container {
-    height: 5vh;
   }
 }
