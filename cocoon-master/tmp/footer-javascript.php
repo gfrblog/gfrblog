@@ -82,7 +82,7 @@ if (!is_amp()): ?>
       if (!$("#header-container").hasClass("fixed-header")) {
         <?php if (get_header_layout_type_center_logo()): ?>
         /*トップメニュータイプに変更する*/
-        $("#header-container-in").removeClass('hlt-center-logo hlt-center-logo-top-menu cl-slim').addClass("hlt-top-menu wrap");
+        $("#header-container-in").removeClass('hlt-center-logo hlt-center-logo-top-menu').addClass("hlt-top-menu wrap");
         <?php endif; ?>
         $("#header-container").addClass("fixed-header");
         $("#header-container").css({
@@ -183,13 +183,14 @@ if (!is_amp()): ?>
 
     /*ウインドウがリサイズされたら発動*/
     $window.resize(function() {
-      var scrollTop = $window.scrollTop();
       /*ウインドウの幅を変数に格納*/
       var w = $window.width();
       if (w <=  mobileWidth) {/*モバイル端末の場合*/
         staticHeader();
       } else {/*パソコン端末の場合*/
-        if (scrollTop <= 50) {
+        var scrollTop = $window.scrollTop();
+        console.log(scrollTop);
+        if (scrollTop >= 50) {
           stickyHeader();
         }
 
