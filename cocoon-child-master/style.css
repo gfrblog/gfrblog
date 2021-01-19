@@ -33,7 +33,7 @@ Version:    1.1.2
   height: auto;
 }
 .cat-label {
-  background-color: #339966;
+  background-color: #20948b;
   border: 0px!important;
   padding: 2px 20px;
   font-size: 15px;
@@ -67,12 +67,12 @@ Version:    1.1.2
   margin-bottom: 40px;
   margin-left: 18%;
   margin-right: 18%;
-  border: solid 1.2px #339966 !important;
+  border: solid 1.2px #20948b !important;
 }
 .toc-title {
   position: relative;
   padding:10px 0; /**位置(上下)**/
-  background: #339966; /**背景色**/
+  background: #20948b; /**背景色**/
   color: #fff; /**文字色**/
   font-weight: bold; /**太字*/
 }
@@ -116,7 +116,7 @@ Version:    1.1.2
   padding: 0.5em;
   font-size: 25px;
   background: #ecfdf4;/*背景色*/
-  border-left: solid 5px #339966;/*左線（実線 太さ 色）*/
+  border-left: solid 5px #20948b;/*左線（実線 太さ 色）*/
 }
 .article h2:first-letter{
   font-size: 35px;
@@ -131,7 +131,7 @@ Version:    1.1.2
 .article h3:after {
   content: " ";
   display: block;
-  border-bottom: solid 5px #339966;
+  border-bottom: solid 5px #20948b;
   bottom: -5px;
   width: 20%;
   position: absolute;
@@ -169,7 +169,7 @@ blockquote{
   color: black;/*文字色*/
   background: transparent;/*背景透明に*/
   border: none;
-  border-left: solid 4px #339966;/*左線*/
+  border-left: solid 4px #20948b;/*左線*/
 }
 blockquote:before{ /*上の引用アイコン*/
   content: '';
@@ -225,39 +225,48 @@ blockquote:after{ /*下の引用アイコン*/
 ************************************/
 /* ヘッダー位置固定 */
 #header-container {
-  /* box-shadow: 0 0 10px rgba(30, 30, 30, .1); */
-  /* position: fixed; */
+  /* box-shadow: 0 0 10px rgba(30, 30, 30, .1);
+  position: fixed;
   height: 50px;
   left: 0;
   top: 0;
   right: 0;
-  z-index: 10;
+  z-index: 10; */
+  background-color: #F4F5F7;
 }
-#header-container-in, #header-in, #navi, #navi-in, #menu-headermenu{
+/* #header-container-in, #header-in, #navi, #navi-in, #menu-headermenu{
   height: 100%;
 }
 #header-in, .logo.logo-header.logo-image, .site-name.site-name-text-link, .site-name-text{
   height: 100%;
-}
+} */
 
 /* ロゴ */
 /*大きさ */
-.header-container-in.hlt-top-menu .logo-header img {
+/* .header-container-in.hlt-top-menu .logo-header img {
   max-height: 50px;
   vertical-align: middle;
-}
+} */
 /* 横の空白 */
-.header.ba-fixed.cf {
+/* .header.ba-fixed.cf {
   margin-left: 5%;
-}
+} */
 
 /* グローバルメニューの設定 */
 
 /* 各メニューの幅①と②を調整する*/
+#navi{
+  background-color: #20948b;
+}
+
 #navi-in {
   padding: 0 0;
   margin: 0 5%;
   width: 90%; /* ①メニュー全体の幅 */
+  height: 40px;
+}
+#menu-headermenu {
+  height: 100%;
 }
 #navi .navi-in > ul > li {
   height: 100%;
@@ -270,14 +279,12 @@ blockquote:after{ /*下の引用アイコン*/
   font-size: 15px; /* ナビ文字大きさ */
   font-weight: bold;
   position: relative;
-  color: #fff; /* ナビ文字色 */
   display: block;
   text-decoration: none;
   margin: 0 0;
 }
 .navi-in a:hover {
   background-color:#e4e4e4;
-
   transition: 0.5s;
 }
 
@@ -308,6 +315,11 @@ blockquote:after{ /*下の引用アイコン*/
   width: 100%;
   transform: translateY(-50%) translateX(-50%);
   -webkit-transform: translateY(-50%) translateX(-50%);
+}
+
+/* サイドバーの設定*/
+#sidebar{
+  background-color: #F4F5F7;
 }
 
 /************************************
