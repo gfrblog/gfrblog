@@ -33,7 +33,7 @@ Version:    1.1.2
   height: auto;
 }
 .cat-label {
-  background-color: #20948b;
+  background-color: #20948b !important;
   border: 0px!important;
   padding: 2px 20px;
   font-size: 15px;
@@ -257,13 +257,18 @@ blockquote:after{ /*下の引用アイコン*/
 /* 各メニューの幅①と②を調整する*/
 #navi{
   background-color: #20948b;
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  left: 0;
+  top: 0;
 }
 
 #navi-in {
   padding: 0 0;
   margin: 0 5%;
   width: 90%; /* ①メニュー全体の幅 */
-  height: 40px;
+  height: 100%;
 }
 #menu-headermenu {
   height: 100%;
@@ -287,7 +292,6 @@ blockquote:after{ /*下の引用アイコン*/
   background-color:#e4e4e4;
   transition: 0.5s;
 }
-
 .navi-in a::before {
   position: absolute;
   bottom: 30%;
@@ -321,6 +325,125 @@ blockquote:after{ /*下の引用アイコン*/
 #sidebar{
   background-color: #F4F5F7;
 }
+
+
+/* インデックスの設定 */
+body.home .main{
+	background-color: #F4F5F7 !important;
+}
+
+a.entry-card-wrap.a-wrap.border-element.cf{/*カード本体*/
+	background-color: #fff;
+  padding:0 0 .5em;
+  border-radius:10px;
+  width:48%;
+  margin-bottom:2em;
+}
+a.entry-card-wrap.a-wrap.border-element.cf:hover{/*カード本体*/
+	background-color: #fff;
+ }
+figure.entry-card-thumb.card-thumb.e-card-thumb{/*サムネイル大きさ*/
+  max-height:150px;
+  border-radius:10px 10px 0 0/ 10px 10px 0 0;
+  overflow:hidden;
+  display: flex;/*位置をflexで中心に*/
+  justify-content: center;
+  align-items: center;
+}
+a.entry-card-wrap.a-wrap.border-element.cf .post-date,
+a.entry-card-wrap.a-wrap.border-element.cf .post-update{/*日付・更新日*/
+  margin-right:1.5em!important;
+  color:#7b7b7b;
+  font-size:.86em;
+}
+.tagcloud a .tag-caption::before {
+	content: "#";
+	padding-right: 0;
+}
+div.entry-card-tags-ex{
+    left: 0;
+    margin-left: 1.5em!important;
+}
+.entry-card-tags-ex a{
+  border: none;
+  color:#7b7b7b;
+}
+.eye-catch .cat-label, .cat-label{/*カテゴリラベル全体デザイン*/
+  font-size:.7em;
+  border-radius:10px;
+  margin:0.5em;
+  padding:0 0.5em 0;
+  background-color:#90C31F;
+  color:#fff;
+}
+div.admin-pv{/*閲覧数を非表示*/
+  display:none;
+}
+.e-card-thumb .cat-label{/*カテゴリラベルを右に寄せる*/
+  margin-left:.8em;
+}
+@media screen and (max-width: 1100px){/*サムネイル大きさ*/
+  figure.entry-card-thumb.card-thumb.e-card-thumb{
+  max-height:120px;
+}}
+@media screen and (max-width: 1023px){/*サムネイル大きさ*/
+  figure.entry-card-thumb.card-thumb.e-card-thumb{
+  max-height:180px;
+}}
+@media screen and (max-width: 900px){/*サムネイル大きさ*/
+  figure.entry-card-thumb.card-thumb.e-card-thumb{
+  max-height:160px;
+}}
+@media screen and (max-width: 750px){/*サムネイル大きさ*/
+  figure.entry-card-thumb.card-thumb.e-card-thumb{
+  max-height:130px;
+}}
+@media screen and (max-width: 600px){/*サムネイル大きさ*/
+  figure.entry-card-thumb.card-thumb.e-card-thumb{
+  max-height:250px;
+  }
+  a.entry-card-wrap.a-wrap.border-element.cf{/*画面幅600pxまで、1カラムにする*/
+  margin:.5em 1em!important;
+  }
+  .ect-vertical-card .entry-card-wrap {
+  width: 95%!important;
+}}
+@media screen and (max-width: 480px){/*カード本体*/
+  a.entry-card-wrap.a-wrap.border-element.cf{
+  margin:.5em 1em!important;
+  border-radius:10px;
+  }
+  .e-card-thumb .cat-label{/*カテゴリラベルを右に寄せる*/
+  margin-left:1em;
+}}
+@media screen and (max-width: 1023px){/*画面幅1023未満はカード本体に影を表示*/
+  div#list a {
+  box-shadow: 0px 1px 5px 0 rgba(0,0,0,.2);
+}}
+@media screen and (min-width: 601px) and (max-width: 834px){/*通常記事本文の周囲の空白にも影響している*/
+  div#content.content.cf{
+  margin:1em;
+  }}
+  h2.entry-card-title.card-title.e-card-title{/*カードタイトル*/
+  font-size:18px;
+  color:#7b7b7b;
+  font-weight:bold;
+  text-align:center;
+  line-height:1.8em;
+  margin-top:1em;
+  padding: 0 1.5em 0;
+  }
+@media (max-width:834px){
+  h2.entry-card-title.card-title.e-card-title{/*カードタイトル*/
+  font-size: 1.15em;
+  font-weight:bold;
+  line-height:1.7em;
+  padding: 1.5em .8em 1em;
+  margin:0;
+  }
+  main.main, div.sidebar {/*モバイル表示などの本文全体の周りの空白にも影響している*/
+  padding:0;
+}}
 
 /************************************
 ** レスポンシブデザイン用のメディアクエリ
