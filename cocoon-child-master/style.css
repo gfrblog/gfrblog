@@ -225,67 +225,21 @@ blockquote:after{ /*下の引用アイコン*/
 ************************************/
 /* ヘッダー位置固定 */
 #header-container {
-  /* box-shadow: 0 0 10px rgba(30, 30, 30, .1);
-  position: fixed;
-  height: 50px;
-  left: 0;
-  top: 0;
-  right: 0;
-  z-index: 10; */
   background-color: #F4F5F7;
 }
-/* #header-container-in, #header-in, #navi, #navi-in, #menu-headermenu{
-  height: 100%;
-}
-#header-in, .logo.logo-header.logo-image, .site-name.site-name-text-link, .site-name-text{
-  height: 100%;
-} */
-
-/* ロゴ */
-/*大きさ */
-/* .header-container-in.hlt-top-menu .logo-header img {
-  max-height: 50px;
-  vertical-align: middle;
-} */
-/* 横の空白 */
-/* .header.ba-fixed.cf {
-  margin-left: 5%;
-} */
-
 /* グローバルメニューの設定 */
-
-/* 各メニューの幅①と②を調整する*/
+/* メニューのデザイン */
 #navi{
-  background-color: #20948b;
+  z-index: 10;
   position: fixed;
   width: 100%;
-  height: 40px;
-  left: 0;
   top: 0;
 }
-
-#navi-in {
-  padding: 0 0;
-  margin: 0 5%;
-  width: 90%; /* ①メニュー全体の幅 */
-  height: 100%;
-}
-#menu-headermenu {
-  height: 100%;
-}
-#navi .navi-in > ul > li {
-  height: 100%;
-  width: 16.5%; /* ②メニューの各要素の幅 */
-}
-
-/* メニューのデザイン */
 .navi-in a {
   height: 100%;
-  font-size: 15px; /* ナビ文字大きさ */
+  font-size: 12px; /* ナビ文字大きさ */
   font-weight: bold;
   position: relative;
-  display: block;
-  text-decoration: none;
   margin: 0 0;
 }
 .navi-in a:hover {
@@ -294,17 +248,47 @@ blockquote:after{ /*下の引用アイコン*/
 }
 .navi-in a::before {
   position: absolute;
-  bottom: 30%;
+  bottom: 0px;
   content: "";
   display: block;
   width: 100%;
-  height: 3%;
-  background: black; /* マウスON時の下線色 */
+  height: 3px;
+  background: #fff; /* マウスON時の下線色 */
   transform: scale(0, 1);
   transition: 0.4s;
 }
 .navi-in a:hover::before {
   transform: scale(1);
+}
+#menu-item-57 .item-label:before {
+  font-family: "Font Awesome 5 Free";
+  white-space: pre-wrap;
+  content: "\f015   ";
+}
+#menu-item-27 .item-label:before {
+  font-family: "Font Awesome 5 Free";
+  white-space: pre-wrap;
+  content: "\f57d   ";
+}
+#menu-item-44 .item-label:before {
+  font-family: "Font Awesome 5 Free";
+  white-space: pre-wrap;
+  content: "\f0c0   ";
+}
+#menu-item-46 .item-label:before {
+  font-family: "Font Awesome 5 Free";
+  white-space: pre-wrap;
+  content: "\f521   ";
+}
+#menu-item-36 .item-label:before {
+  font-family: "Font Awesome 5 Free";
+  white-space: pre-wrap;
+  content: "\f0ca   ";
+}
+#menu-item-72 .item-label:before {
+  font-family: "Font Awesome 5 Free";
+  white-space: pre-wrap;
+  content: "\f302   ";
 }
 
 /* メニューの文字位置を上下中央にする */
