@@ -369,7 +369,40 @@ blockquote:after{ /*下の引用アイコン*/
 body.home .main,.category .main,.tag .main{
 	background-color: #F4F5F7 !important;
 }
+div.index-tab-buttons .index-tab-button{
+  background-color: #fff !important;
+  color: #20948b;
+  font-size: 22px;
+}
 
+#index-tab-1:checked~.index-tab-buttons .index-tab-button[for=index-tab-1]{
+	color: #000;
+  background: #F4F5F7!important;
+  border: none;
+  font-size: 22px;
+  position: relative;
+}
+#index-tab-1:checked~.index-tab-buttons .index-tab-button[for=index-tab-1]:before {
+  content: '';
+  position: absolute;
+  bottom: 12px;
+  display: inline-block;
+  width: 80px;
+  height: 3px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #000000;
+  border-radius: 2px;
+}
+@media screen and (max-width: 834px) {
+  div.index-tab-buttons{
+    flex-direction: column;
+  }
+  div.index-tab-buttons .index-tab-button{
+    width: 100%;
+  }
+}
 
 /* エントリーカードの詳細 */
 a.entry-card-wrap.a-wrap.border-element.cf{/*カード本体*/
