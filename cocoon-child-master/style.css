@@ -110,7 +110,7 @@ Version:    1.1.2
   line-height: normal;
   position:relative;
 }
-
+/* h2 */
 .article h2 {
   margin-top: 5em;
   padding: 0.5em;
@@ -121,7 +121,7 @@ Version:    1.1.2
 .article h2:first-letter{
   font-size: 35px;
 }
-
+/* h3 */
 .article h3 {
   margin-top: 5em;
   border-bottom: solid 5px #bafad8;
@@ -136,7 +136,7 @@ Version:    1.1.2
   width: 20%;
   position: absolute;
 }
-
+/* h4 */
 .article h4 {
   margin-top: 1.5em;
   font-size: 20px;
@@ -162,7 +162,7 @@ Version:    1.1.2
   width: 100%;
   border-bottom: solid 3px #bafad8;
 }
-
+/* blockquote */
 blockquote{
   padding: 0;
   padding-left: 1vw;
@@ -183,6 +183,7 @@ blockquote:after{ /*下の引用アイコン*/
 #main .button-caption {
 	display: none; /*キャプション非表示*/
 }
+
 /*シェアボタン*/
 .sns-share-message{
 	font-weight: bold; /*太字*/
@@ -201,6 +202,7 @@ blockquote:after{ /*下の引用アイコン*/
 	width: 40px; /*ボタンの横幅*/
 	height: 40px; /*ボタンの高さ*/
 }
+
 /*フォローボタン*/
 .sns-follow-message{
 	font-weight: bold; /*太字*/
@@ -221,12 +223,17 @@ blockquote:after{ /*下の引用アイコン*/
 
 
 /************************************
-** トップページのみのデザイン関連
+** トップページのデザイン関連
 ************************************/
 /* ヘッダー位置固定 */
 #header-container {
   background-color: #F4F5F7;
 }
+.site-logo-image{
+  width: 80%;
+  margin: 0 10%;
+}
+
 /* グローバルメニューの設定 */
 /* メニューのデザイン */
 #navi{
@@ -290,7 +297,6 @@ blockquote:after{ /*下の引用アイコン*/
   white-space: pre-wrap;
   content: "\f302   ";
 }
-
 /* メニューの文字位置を上下中央にする */
 .caption-wrap {
   position: relative;
@@ -306,16 +312,66 @@ blockquote:after{ /*下の引用アイコン*/
 }
 
 /* サイドバーの設定*/
+/* 全体の背景 */
 #sidebar{
   background-color: #F4F5F7;
 }
+.sidebar a.popular-entry-card-link.a-wrap{
+  margin:0;
+  padding:0;
+}
+.sidebar figure.popular-entry-card-thumb.widget-entry-card-thumb.card-thumb{/*サムネイル周り*/
+  margin:1em 0 1em .5em;
+}
+.sidebar img.attachment-thumb120.size-thumb120.wp-post-image{
+	box-shadow: 0 15px 30px -5px rgba(0,0,0,.15), 0 0 5px rgba(0,0,0,.1);
+  transform: translateY(-2px);
+}
+.sidebar img.attachment-thumb120.size-thumb120.wp-post-image:hover{
+	box-shadow: 0 0px 0px 0px rgba(0,0,0,.15), 0 0 0px rgba(0,0,0,.1);
+  transform: translateY(0px);
+  transition: 0.3s; /*アニメーションの時間*/
+}
+.sidebar div.popular-entry-card-content.widget-entry-card-content.card-content{/*スニペット*/
+  padding:1.3em .5em .9em 1.3em!important;
+  font-size: 14px;
+  text-align: justify;
+  line-height:1.5;
+}
+.sidebar span.popular-entry-card-title.widget-entry-card-title.card-title:hover{
+  color: #1bb6d4;
+}
+/* タグクラウド */
+.tagcloud a {
+  background: none; /*背景を消す*/
+  border: 1px solid #ccc; 
+  border-radius: 20px; /*角の丸み*/
+  color: #555; /*文字色*/
+  display: inline-block;
+  padding: 3px 10px;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 2px;
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.tagcloud a:hover { /*マウスホバー時*/
+  background: #20948b;
+  border: 1px solid #20948b;
+  color: #fff;
+  transition: 0.5s; /*アニメーションの時間*/
+}
 
 
-/* インデックスの設定 */
-body.home .main{
+/* エントリーカードの設定 */
+/* エントリーカード表示背景 */
+body.home .main,.category .main,.tag .main{
 	background-color: #F4F5F7 !important;
 }
 
+
+/* エントリーカードの詳細 */
 a.entry-card-wrap.a-wrap.border-element.cf{/*カード本体*/
 	background-color: #fff;
   padding:0 0 .5em;
@@ -323,12 +379,13 @@ a.entry-card-wrap.a-wrap.border-element.cf{/*カード本体*/
   width:48%;
   margin-bottom:2em;
 }
-a.entry-card-wrap.a-wrap.border-element.cf:hover{/*カード本体*/
-	background-color: #fff;
- }
+a.entry-card-wrap.a-wrap.border-element.cf:hover{/*カード選択時*/
+	box-shadow: 0 15px 30px -5px rgba(0,0,0,.15), 0 0 5px rgba(0,0,0,.1);
+  transform: translateY(-2px);
+}
 figure.entry-card-thumb.card-thumb.e-card-thumb{/*サムネイル大きさ*/
   max-height:150px;
-  border-radius:10px 10px 0 0/ 10px 10px 0 0;
+  border-radius:10px 10px 0 0/10px 10px 0 0;
   overflow:hidden;
   display: flex;/*位置をflexで中心に*/
   justify-content: center;
@@ -340,25 +397,17 @@ a.entry-card-wrap.a-wrap.border-element.cf .post-update{/*日付・更新日*/
   color:#7b7b7b;
   font-size:.86em;
 }
+/*エントリーカードのタグ*/
 .tagcloud a .tag-caption::before {
-	content: "#";
 	padding-right: 0;
 }
 div.entry-card-tags-ex{
-    left: 0;
-    margin-left: 1.5em!important;
+  left: 0;
+  margin-left: 1.5em!important;
 }
 .entry-card-tags-ex a{
   border: none;
   color:#7b7b7b;
-}
-.eye-catch .cat-label, .cat-label{/*カテゴリラベル全体デザイン*/
-  font-size:.7em;
-  border-radius:10px;
-  margin:0.5em;
-  padding:0 0.5em 0;
-  background-color:#90C31F;
-  color:#fff;
 }
 div.admin-pv{/*閲覧数を非表示*/
   display:none;
@@ -440,31 +489,9 @@ div.admin-pv{/*閲覧数を非表示*/
 /*834px以下*/
 @media screen and (max-width: 834px){
   /*必要ならばここにコードを書く*/
-
-  /* ロゴ横の空白 */
-  .header.ba-fixed.cf {
-    margin-left: 0;
-  }
-  /* ロゴ位置を上下中央にする */
-  .header-in.wrap.cf {
-    position: relative;
-    height: 100%;
-  }
-  .header-container-in.hlt-top-menu .logo-header img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    height: 80%;
-    transform: translateY(-50%) translateX(-50%);
-    -webkit-transform: translateY(-50%) translateX(-50%);
-  }
 }
 
 /*480px以下*/
 @media screen and (max-width: 480px){
   /*必要ならばここにコードを書く*/
-  /* ロゴ横の空白 */
-  .header.ba-fixed.cf {
-    margin-left: 0;
-  }
 }
