@@ -1,27 +1,23 @@
 /*
-  Skin Name: アリス
-  Description: パステルカラーの可愛らしいスキンです。
+  Skin Name: 白ウサギ(白×ブルー)
+  Description: アリスの色違い。白×ブルーを基調とした、パステルカラーの可愛らしいスキンです。
   Skin URI: https://yuhostyles.com/
   Author: Yuhomyan
   Author URI: https://yuhostyles.com/
-  Screenshot URI: https://im-cocoon.net/wp-content/uploads/skin-alice.jpg
+  Screenshot URI: https://yuhostyles.com/wp-content/uploads/2021/01/Screen-Shot-2021-01-15-at-6.04.12.jpg
   Version: 1.0.1
-  Priority: 9600001000
-  Visibility: false
+  Priority: 9400001200
 */
 /*以下にスタイルシートを記入してください*/
 
 /* 全体 */
 body {
     color: #6a859c;
-	background-color: #c6eeee;
+	background: #c5ddf7;
 }
 /* link color */
-a:hover{
-	color:#ef97e8;
-}
 a {
-    color: #ff928b;
+    color: #3b97f3;
 }
 a:hover {
     color: #ef97e8;
@@ -37,15 +33,16 @@ Header{font-family:"WebLTGothicFont";}
 Footer{font-family:"WebLTGothicFont";}
 
 /* ヘッダー背景 */
-.header-in {
-    background: repeating-linear-gradient(90deg, #edf5f4, #edf5f4 10px, #f6faf9 0, #f6faf9 20px);
+#header {
+    background: repeating-linear-gradient(90deg, #f3fafe, #f3fafe 10px, #eaf5ff 0, #eaf5ff 20px);
 }
 .header, .header .site-name-text, #navi .navi-in a, #navi .navi-in a:hover {
-    color: #f47fd7;
+    color: #1588fb;
 }
-/* フッター色 */
-#footer {
-    background: #c6eeee;
+
+/* footer */
+#footer{
+	background: #c5ddf7;
 }
 
 /* サイトタイトル */
@@ -78,7 +75,7 @@ Footer{font-family:"WebLTGothicFont";}
 }
 .tagline{
 	    margin: 0 0 1.5em 0;
-	    color: #24e5df;
+	    color: #f47fd7;
 }
 
 /* Navibar */
@@ -91,7 +88,7 @@ Footer{font-family:"WebLTGothicFont";}
 }
 /* 色と影 */
 #header-container .navi, #navi .navi-in>.menu-header .sub-menu {
-  background: #95e5e2;
+  background: #7fbfff;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.18);
 }
 
@@ -114,7 +111,7 @@ Footer{font-family:"WebLTGothicFont";}
 	width: 100%;/*hover時に表示*/
 }
 #navi .navi-in a:hover{
-	background: #95e5e2;
+	background: #7fbfff;
 }
 
 /* サイト全体文字色 */
@@ -149,25 +146,25 @@ Footer{font-family:"WebLTGothicFont";}
 /* 記事タイトルフォント */
 .entry-card-title, .related-entry-card-title {
     font-family:"WebLTGothicFont";
-	color: #ef97e8;
+	color: #1588fb;
 }
 .entry-title, .archive-title{
-	color: #95e5e2;
+	color: #1588fb;
 }
 /* 新着記事 */
 .list-title-in{
-	color: #ef97e8;
+	color: #1588fb;
 	font-family: 'WebLTGothicFont';
 }
 .list-title-in:before, .list-title-in:after{
-	background-color: #ef97e8;
+	background-color: #1588fb;
 }
 
 /* 記事内見出しH2 */
 .article h2{
 	background: #f7f7f7;
     padding: 20px 15px 18px;
-    border-left: 9px solid #95e5e2;
+    border-left: 9px solid #7fbfff;
     line-height: 40px;
     margin-top: 60px;
     margin-bottom: 40px;
@@ -177,7 +174,7 @@ Footer{font-family:"WebLTGothicFont";}
 .article h3{
 	letter-spacing: 1.6px;
 	border: none;
-    border-left: 9px solid #95e5e2;
+    border-left: 9px solid #7fbfff;
     margin-top: 60px;
      margin-bottom: 40px;
 
@@ -185,12 +182,12 @@ Footer{font-family:"WebLTGothicFont";}
 /* 記事内見出しH4 */
 .article h4 {
 	border: none;
-	  border-left: 4px solid #95e5e2;
+	  border-left: 4px solid #7fbfff;
 }
 
 /* メタ情報 */
 .ect-vertical-card .entry-card-wrap .post-date, .ect-vertical-card .entry-card-wrap .post-update,.date-tags, .e-card-info > span {
- color: #b2e0df;
+ color: #cdbb9d;
  text-decoration: none;
 }
 /* Breadcrumb */
@@ -200,7 +197,7 @@ Footer{font-family:"WebLTGothicFont";}
 
 /* 記事タイトルホバー */
 .entry-title{
-	color: #ef97e8;
+	color: #1588fb;
 }
 .entry-title a:hover {
 color: #ba91e2;
@@ -256,7 +253,7 @@ color: #ba91e2;
 /* サイドバー */
 .sidebar h3, .sidebar h4 {
 	background: none;
-	border-bottom: 2px solid #ef97e8;
+	border-bottom: 2px solid #f47fd7;
 }
 /* ウィジェットタイトルの編集*/
 .side-title{
@@ -276,8 +273,8 @@ color: #ba91e2;
 /* サイト内検索 */
 /* サイト内検索 */
 .search-edit, input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea, select {
-   border: 2px solid #a4e8e6; /* 線の色 */
-   border-radius: 3px;
+   border: 2px solid #7fbfff; /* 線の色 */
+  border-radius: 3px;
   outline: none;
 }
 [type=submit].search-submit {
@@ -285,7 +282,7 @@ color: #ba91e2;
     right: 0;
     height: 100%;
     padding: 8px 15px;
-    background: #a4e8e6; /* ボタンの色 */
+    background: #7fbfff; /* ボタンの色 */
     color: #fff; /* 文字の色 */
     font-size: 16px;
     font-weight: bold;
@@ -294,7 +291,7 @@ color: #ba91e2;
 }
 [type=submit].search-submit:hover {
     color: #fff;
-    background: #95e5e2;
+    background: #7fbfff;
 }
 
 /* プロフィールウィジェット */
@@ -323,25 +320,25 @@ color: #ba91e2;
 /* Widgetリスト系 */
 .widget_recent_entries ul li a, .widget_categories ul li a, .widget_archive ul li a, .widget_pages ul li a, .widget_meta ul li a, .widget_rss ul li a, .widget_nav_menu ul li a{
 	font-size: 0.9rem;
+  line-height: 2rem;
 	padding: 3px;
 }
 .widget_recent_entries ul li a:hover, .widget_categories ul li a:hover, .widget_archive ul li a:hover, .widget_pages ul li a:hover, .widget_meta ul li a:hover, .widget_rss ul li a:hover, .widget_nav_menu ul li a:hover{
 	color: inherit;
 	background-color: transparent;
-	border-bottom: 2px solid #ef97e8;
+	border-bottom: 2px solid #7fbfff;
 	transition-duration: 0s;
-	display: inline-block;
 }
 /* Box-Menu */
 .box-menu{
 	color: inherit;
-	box-shadow: inset 1px 1px 0 0 #c6eeee, 1px 1px 0 0 #c6eeee, 1px 0 0 0 #c6eeee;
+	box-shadow: inset 1px 1px 0 0 #cbe5ff, 1px 1px 0 0 #cbe5ff, 1px 0 0 0 #cbe5ff;
 }
 .box-menu-icon {
     color: #ffc8fb !important;
 }
 .box-menu:hover {
-    box-shadow: inset 2px 2px 0 0 #ef97e8, 2px 2px 0 0 #ef97e8, 2px 0 0 0 #ef97e8, 0 2px 0 0 #ef97e8 !important;
+    box-shadow: inset 2px 2px 0 0 #7fbfff, 2px 2px 0 0 #7fbfff, 2px 0 0 0 #7fbfff, 0 2px 0 0 #7fbfff !important;
 }
 /* カレンダー */
 table th {
@@ -384,7 +381,8 @@ table th {
     display: inline-block;
  line-height: 1;
  color: #fff;
- background: #f58694;
+ background: lightskyblue;
+	border: none;
  padding: 12px 20px;
  border-radius: 3px;
  opacity: 80%;
@@ -396,7 +394,7 @@ table th {
 .pagination-next-link:hover,
 .comment-btn:hover{
 	color: #fff;
- background: #f58694;
+ background: lightskyblue;
 	box-shadow: 0 13px 20px -3px rgba(0, 0, 0, 0.24);
 }
 
@@ -441,7 +439,7 @@ table th {
 }
 .bc-brand-color-white.sns-share .facebook-button:hover, .bc-brand-color-white.sns-follow .facebook-button:hover,
 /* color */
-.bc-brand-color.sns-share .facebook-button, .bc-brand-color.sns-follow .facebook-button
+.bc-brand-color.sns-share .facebook-button, .bc-brand-color.sns-follow .facebook-button,
 /* profile */
 .author-box .sns-follow-buttons a.follow-button.facebook-button {
 	background-color: #3b97f3;
@@ -479,7 +477,7 @@ table th {
 }
 .bc-brand-color-white.sns-share .hatebu-button:hover, .bc-brand-color-white.sns-follow .hatebu-button:hover,
 /* color */
-.bc-brand-color.sns-share .hatebu-button, .bc-brand-color.sns-follow .hatebu-button
+.bc-brand-color.sns-share .hatebu-button, .bc-brand-color.sns-follow .hatebu-button,
 /* profile */
 .author-box .sns-follow-buttons a.follow-button.hatebu-button{
 	background-color: #488ce4;
@@ -585,7 +583,9 @@ table th {
 border: 1px solid #ffbf7f; /* 枠線色 */
 	color: #ff8204; /* 文字色 */
 }
-.bc-brand-color-white.sns-share .amazon-button:hover, .bc-brand-color-white.sns-follow .amazon-button:hover {
+.bc-brand-color-white.sns-share .amazon-button:hover, .bc-brand-color-white.sns-follow .amazon-button:hover,
+/* profile */
+.author-box .sns-follow-buttons a.follow-button.amazon-button{
 	background-color: #ffbf7f;
     color: #fff;
 }
@@ -594,8 +594,12 @@ border: 1px solid #ffbf7f; /* 枠線色 */
 	border: 1px solid #ea4c89; /* 枠線色 */
 	color: #ea4c89; /* 文字色 */
 }
+/* hover */
 .bc-brand-color-white.sns-share .rakuten-room-button:hover, .bc-brand-color-white.sns-follow .rakuten-room-button:hover,
-.bc-brand-color.sns-share .rakuten-room-button, .bc-brand-color.sns-follow .rakuten-room-button{
+/* color */
+.bc-brand-color.sns-share .rakuten-room-button, .bc-brand-color.sns-follow .rakuten-room-button,
+/* profile */
+.author-box .sns-follow-buttons a.follow-button.rakuten-room-button{
 	background-color: #ea4c89; /* 枠線色 */
 	color: #fff; /* 文字色 */
 }
@@ -625,7 +629,8 @@ border: 1px solid #ffbf7f; /* 枠線色 */
 .bc-brand-color-white.sns-share .note-button:hover, .bc-brand-color-white.sns-follow .note-button:hover,
 .bc-brand-color.sns-share .slack-button, .bc-brand-color.sns-follow .slack-button,
 /* profile */
-.author-box .sns-follow-buttons a.follow-button.note-button{
+.author-box .sns-follow-buttons a.follow-button.note-button,
+.author-box .sns-follow-buttons a.follow-button.slack-button{
 	background-color: #96e4df;
 	color: #fff;
 }
@@ -634,22 +639,29 @@ border: 1px solid #ffbf7f; /* 枠線色 */
     color: #405de6;
     border-color: #405de6;
 }
-.bc-brand-color-white.sns-share .flickr-button:hover, .bc-brand-color-white.sns-follow .flickr-button:hover ,
-.bc-brand-color.sns-share .flickr-button, .bc-brand-color.sns-follow .flickr-button{
+.bc-brand-color-white.sns-share .flickr-button:hover, .bc-brand-color-white.sns-follow .flickr-button:hover,
+.bc-brand-color.sns-share .flickr-button, .bc-brand-color.sns-follow .flickr-button,
+/* profile */
+.author-box .sns-follow-buttons a.follow-button.flickr-button{
     background-color: #405de6;
 }
 /* SoundCloud */
-.bc-brand-color-white.sns-share .soundcloud-button:hover, .bc-brand-color-white.sns-follow .soundcloud-button:hover{
+.bc-brand-color-white.sns-share .soundcloud-button:hover, .bc-brand-color-white.sns-follow .soundcloud-button:hover,
+/* profile */
+.author-box .sns-follow-buttons a.follow-button.soundcloud-button{
     background-color: #ff8800;
 }
-
+/* 記事下ウィジェット用 */
+.author-box .sns-follow-buttons a.follow-button{
+	color: #fff;
+	border: none;
+}
 /* SNSシェアメッセージ下のボーダー色 */
 .sns-share-message, .sns-follow-message{
 	display: inline-block;
 	border-bottom: 4px solid #fbe3f9;
 	margin-bottom: 1rem;
 }
-
 
 /* Contact Form 7 */
 /* 必須マーク */
@@ -716,11 +728,11 @@ span.wpcf7-not-valid-tip,
 /* 目次 */
 .toc{
  background: #fffef6; /* 背景色 */
- border: 2px solid #ffb1d8; /* 枠線 */
+ border: 2px solid #7fbfff; /* 枠線 */
  border-radius: 3px;
 }
 .toc-title{ /* タイトル */
-  color: #ffb1d8; /* 文字色 */
+  color: #7fbfff; /* 文字色 */
 	font-size: 1.8em; /* 大きさ */
 	font-family: WebLTGothicFont; /* フォント */
 }
@@ -734,7 +746,7 @@ span.wpcf7-not-valid-tip,
 	color: inherit;
 }
 .toc a:hover{
-	color: #ffb1d8;
+	color: #7fbfff;
 	text-decoration: none;
 }
 .toc_list ul {
@@ -761,10 +773,14 @@ ol.toc-list > li:before {
     height: 2em;
     line-height: 2em;
     text-align: center;
-    background: #ffb1d8;
+    background: #7fbfff;
     color: #fff;
     border-radius: 50%;
     margin-right: .5em;
+}
+.toc .toc-list ul, .toc .toc-list ol {
+    padding-left: 3em;
+    margin: 0;
 }
 
 /* シンタックスハイライター */
@@ -784,4 +800,9 @@ ol.toc-list > li:before {
 	color: #fff;
     background: #f58694;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12), 0 3px 1px -2px rgba(0,0,0,.2);
+}
+
+/* モバイル版メニュー */
+.menu-drawer a{
+	color: #3b97f3;
 }

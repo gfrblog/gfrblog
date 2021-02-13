@@ -14,7 +14,7 @@ class Functions {
   private $fa = '';
 
   //スキンカラー初期値
-  const KEY_COLOR  = '#757575';
+  const KEY_COLOR  = '#e57373';
   const TEXT_COLOR = '#ffffff';
 
   //ブロックスタイル一覧
@@ -102,6 +102,13 @@ class Functions {
         'name'  => 'columns-card',
         'label' => 'カラム'
       ]
+    ],
+    [
+      'name'       => 'cocoon-blocks/blogcard',
+      'properties' => [
+        'name'  => 'text',
+        'label' => 'テキスト'
+      ]
     ]
   ];
 
@@ -125,12 +132,22 @@ class Functions {
     'deep-orange'   => '#ff7043',
     'brown'         => '#8d6e63',
     'grey'          => '#90a4ae',
-    'black'         => '#616161',
+    'black'         => '#424242',
     'watery-blue'   => '#e3f2fd',
     'watery-yellow' => '#fff8e1',
     'watery-red'    => '#ffebee',
     'watery-green'  => '#e8f5e9'
   ];
+
+  //パターン名
+  const PATTERNS = [
+    'comparison-table',
+    'fullwide-columns',
+    'linklist-box'
+  ];
+
+  //隠しフィールド名
+  const HIDDEN = 'silk_submit_hidden';
 
   //初期値・フック一覧
   private function __construct() {
@@ -159,12 +176,18 @@ class Functions {
     add_filter('external_blogcard_image_height', [$this, 'blogcard_height']);
 
     //ブロックカスタマイズ
-    add_action('enqueue_block_editor_assets', [$this, 'editor_assets']);
+    add_action('enqueue_block_editor_assets', [$this, 'editor_assets'], 11);
+    add_action('admin_menu', [$this, 'reusable_menu']);
+    add_filter('image_size_names_choose', [$this, 'image_size']);
+    add_action('init', [$this, 'block_pattern']);
     add_filter('render_block', [$this, 'custom_blocks'], 10, 2);
 
     //AMP
     add_filter('amp_skin_css', [$this, 'amp_css']);
     add_action('get_template_part_tmp/amp-header', [$this, 'amp_skin']);
+
+    //スキン設定
+    add_action('admin_menu', [$this, 'option_setting'], 11);
   }
 
   //インスタンス生成
@@ -184,6 +207,9 @@ class Functions {
     foreach (self::BLOCK_STYLES as $blockstyle) {
       register_block_style($blockstyle['name'], $blockstyle['properties']);
     }
+
+    //公式ブロックパターン削除
+    remove_theme_support('core-block-patterns');
   }
 
   //アイコンバージョン
@@ -241,6 +267,7 @@ class Functions {
     .article h5,
     .sidebar h3,
     ul.toc-list > li::before,
+    .is-style-normal-card .blogcard-label,
     .search-form div.sbtn::after,
     .search-submit,
     .pager-post-navi a .iconfont,
@@ -392,7 +419,9 @@ class Functions {
     $link_color = get_site_link_color() ?: '#1967d2';
     echo 'a:hover,
     .comment-btn,
-    .comment-btn:hover {
+    .comment-btn:hover,
+    .is-style-text .a-wrap,
+    .is-style-text .a-wrap:hover {
       color: '.$link_color.';
     }
     
@@ -425,18 +454,16 @@ class Functions {
     }';
 
     //ボックスメニュー
-    if ($color !== self::KEY_COLOR) {
-      echo '.box-menus .box-menu:hover {
-        box-shadow: inset 2px 2px 0 0 '.$color.', 2px 2px 0 0 '.$color.', 2px 0 0 0 '.$color.', 0 2px 0 0 '.$color.';
-      }
-      
-      .box-menus .box-menu-icon {
-        color: '.$color.';
-      }';
+    echo '.box-menus .box-menu:hover {
+      box-shadow: inset 2px 2px 0 0 '.$color.', 2px 2px 0 0 '.$color.', 2px 0 0 0 '.$color.', 0 2px 0 0 '.$color.';
     }
+    
+    .box-menus .box-menu-icon {
+      color: '.$color.';
+    }';
 
     //アイコン
-    if ($this->fa === 'fa') {
+    if (is_site_icon_font_font_awesome_4()) {
       $font   = 'font-family: FontAwesome;';
       $weight = '';
     } else {
@@ -523,7 +550,7 @@ class Functions {
       
       @media screen and (max-width: 834px) {
         .alignfull > .wp-block-group__inner-container {
-          padding: '.$group_margin.'em 16px;
+          padding: '.$group_margin.'em 24px;
         }
       }';
     }
@@ -601,13 +628,55 @@ class Functions {
     return THUMB320HEIGHT;
   }
 
-  //エディター用JS
+  //エディター用JS・CSS
   public function editor_assets() {
-    wp_enqueue_script(
-      'silk-gutenberg-js',
-      plugins_url('gutenberg.js', __FILE__),
-      ['wp-rich-text']
-    );
+    $file = str_ireplace('style.css', 'gutenberg.js', get_skin_url());
+    $path = url_to_local($file);
+
+    if ($file && file_exists($path)) {
+      wp_enqueue_script(
+        'silk-gutenberg',
+        $file,
+        ['wp-rich-text']
+      );
+
+      wp_add_inline_style(
+        THEME_NAME.'-gutenberg',
+        '.blogcard-url-search .components-popover__content {
+          padding: 10px;
+        }
+        .blogcard-url-search .components-base-control__field {
+          margin-bottom: 0;
+        }'
+      );
+    }
+  }
+
+  //再利用ブロックメニュー
+  public function reusable_menu() {
+    add_menu_page('再利用ブロック', '再利用ブロック', 'manage_options', 'edit.php?post_type=wp_block', '', 'dashicons-controls-repeat', 22);
+    add_submenu_page('edit.php?post_type=wp_block', '再利用ブロック一覧', '再利用ブロック一覧', 'manage_options', 'edit.php?post_type=wp_block');
+    add_submenu_page('edit.php?post_type=wp_block', '新規追加', '新規追加', 'manage_options', 'post-new.php?post_type=wp_block');
+  }
+
+  //画像サイズ追加
+  public function image_size($names) {
+    foreach (wp_get_additional_image_sizes() as $name => $size) {
+      $names[$name] = $name.' ('.strval($size['width']).'x'.strval($size['height']).')';
+    }
+    return $names;
+  }
+
+  //ブロックパターン
+  public function block_pattern() {
+    foreach (self::PATTERNS as $pattern) {
+      register_block_pattern(
+        'silk/'.$pattern,
+        require __DIR__.'/patterns/'.$pattern.'.php'
+      );
+    }
+
+    register_block_pattern_category('silk', ['label' => 'Cocoonスキン「SILK」']);
   }
 
   //ブロックコンテンツ
@@ -669,6 +738,84 @@ class Functions {
       remove_filter('external_blogcard_image_width', [$this, 'blogcard_width']);
       remove_filter('external_blogcard_amazon_image_height', [$this, 'blogcard_height']);
       remove_filter('external_blogcard_image_height', [$this, 'blogcard_height']);
+    }
+  }
+
+  //設定追加
+  public function option_setting() {
+    $hook = get_plugin_page_hook('theme-backup', THEME_SETTINGS_PAFE);
+    if (!is_null($hook)) {
+      add_action($hook, [$this, 'option_field']);
+    }
+  }
+
+  //設定項目
+  public function option_field() {
+    if (isset($_POST[self::HIDDEN]) && wp_verify_nonce($_POST[self::HIDDEN], 'skin-option') && $_FILES['options']['name'] != '') {
+      if ($_FILES['options']['type'] === 'application/json') {
+        $this->update_option($_FILES);
+        echo '<div class="updated"><p><strong>設定を追加しました。</strong></p></div>';
+      } else {
+        echo '<div class="error"><p><strong>JSONファイルを選択してください。</strong></p></div>';
+      }
+    } ?>
+
+    <div class="wrap admin-settings">
+      <div class="metabox-holder">
+        <div id="skin-option" class="postbox">
+          <h2 class="hndle">オプション設定（β版）</h2>
+          <div class="inside">
+            <p>スキンのオプション設定を追加します。Cocoon設定が変更されるので、事前にバックアップファイルを取得してください。</p>
+            <table class="form-table">
+              <tbody>
+                <tr>
+                  <th scope="row">
+                    <?php generate_label_tag('', 'オプション'); ?>
+                  </th>
+                  <td>
+                    <form enctype="multipart/form-data" action="" method="POST">
+                      <input type="hidden" name="MAX_FILE_SIZE" value="300000" />
+                      JSONファイルをアップロード:
+                      <input name="options" type="file" accept="application/json" /><br>
+                      <input type="submit" class="button" value="設定の追加" />
+                      <input type="hidden" name="<?php echo self::HIDDEN; ?>" value="<?php echo wp_create_nonce('skin-option'); ?>">
+                      <?php generate_tips_tag('スキンのオプション設定が書かれたJSONファイルを選択し、「設定の追加」ボタンを押してください。JSONファイルの作成方法はファイル名を除き、スキン制御に従います。'.get_help_page_tag('https://wp-cocoon.com/option-json/')); ?>
+                    </form>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  <?php
+  }
+
+  //オプション追加
+  private function update_option($files) {
+    if (is_user_administrator()) {
+      $path = get_theme_cache_path().'/'.basename($files['options']['name']);
+
+      if (move_uploaded_file($files['options']['tmp_name'], $path)) {
+        if ($json = wp_filesystem_get_contents($path)) {
+          $options = json_decode($json, true);
+
+          if (!is_null($options)) {
+            $mods = get_theme_mods();
+
+            foreach ($options as $name => $value) {
+              if (isset($mods[$name])) {
+                $mods[$name] = $value;
+              }
+            }
+
+            update_option("theme_mods_".get_option('stylesheet'), $mods);
+          }
+
+          wp_filesystem_delete($path);
+        }
+      }
     }
   }
 }

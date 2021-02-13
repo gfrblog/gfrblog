@@ -1108,9 +1108,13 @@ function generate_widget_entries_tag($atts){
   //除外投稿
   $exclude_post_ids = get_archive_exclude_post_ids();
   if ($exclude_post_ids && is_array($exclude_post_ids)) {
-    $args += array(
-      'post__not_in' => $exclude_post_ids,
-    );
+    if (isset($args['post__not_in']) && is_array($args['post__not_in'])) {
+      foreach ($exclude_post_ids as $exclude_post_id) {
+        array_push($args['post__not_in'], $exclude_post_id);
+      }
+    } else {
+      $args['post__not_in'] = $exclude_post_ids;
+    }
   }
   if ($post_type) {
     $args += array(
@@ -1552,16 +1556,21 @@ function get_navi_card_image_attributes($menu, $type = ET_DEFAULT){
   $object = $menu->object;
 
   $is_large_image_use = is_widget_entry_card_large_image_use($type);
+  $thumb_size = $is_large_image_use ? THUMB320 : THUMB120;
   //大きなサムネイル画像を使用する場合
   $image_attributes = array();
   $post_types = get_custum_post_types();
   if ($object == 'post' || $object == 'page' || in_array($object, $post_types)) {
-    $thumb_size = $is_large_image_use ? THUMB320 : THUMB120;
     $thumbnail_id = get_post_thumbnail_id($object_id);
     $image_attributes = wp_get_attachment_image_src($thumbnail_id, $thumb_size);
   }
   elseif ($object == 'category'){//カテゴリーアイキャッチの取得
     $image_url = get_the_category_eye_catch_url($object_id);
+    $thumb_id = attachment_url_to_postid( $image_url );
+    $thumb_img = wp_get_attachment_image_src($thumb_id, $thumb_size);
+    if ($thumb_img[0]) {
+      $image_url = $thumb_img[0];
+    }
     $image_attributes = get_navi_card_image_url_attributes($image_url, $type);
   }
   elseif ($object == 'post_tag' || $object == 'custom') {//カスタムメニュー

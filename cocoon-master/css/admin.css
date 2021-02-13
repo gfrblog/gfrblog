@@ -401,6 +401,7 @@ https://codepen.io/nxworld/pen/oLdoWb
 .admin-settings .demo a { color: #1967d2; }
 .admin-settings .demo a:hover { color: #e53900; }
 .admin-settings .demo ol, .admin-settings .demo ul { padding-left: 40px; }
+.admin-settings .demo ul { list-style-type: disc; }
 .admin-settings .demo hr { color: #eee; }
 .admin-settings .demo .cf::after { clear: both; content: ""; display: block; }
 .admin-settings .demo .header-container, .admin-settings .demo .main, .admin-settings .demo .sidebar, .admin-settings .demo .footer { background-color: #fff; }
@@ -642,7 +643,7 @@ https://codepen.io/nxworld/pen/oLdoWb
 .admin-settings .demo .scrollable-table.stfc-sticky tr > *:first-child { background-color: #e9eff2; color: #333; position: sticky; position: -webkit-sticky; left: 0; z-index: 2; }
 .admin-settings .demo .scrollable-table table { border-collapse: collapse; max-width: none; margin: 0; }
 .admin-settings .demo .scrollable-table th { background-color: #eee; }
-.admin-settings .demo .scrollable-table th, .admin-settings .demo .scrollable-table td { border: solid 1px #ccc; padding: 3px 5px; white-space: nowrap; }
+.admin-settings .demo .scrollable-table th, .admin-settings .demo .scrollable-table td { padding: 3px 5px; white-space: nowrap; }
 .admin-settings .demo .scrollable-table { overflow-x: auto !important; overflow-y: hidden !important; }
 .admin-settings .demo figure.wp-block-table table { width: auto; }
 .admin-settings .demo figure.wp-block-table.alignwide table, .admin-settings .demo figure.wp-block-table.alignfull table { width: 100%; }
@@ -699,7 +700,7 @@ https://codepen.io/nxworld/pen/oLdoWb
 .admin-settings .demo .sidebar .ad-additional-vertical { display: none; }
 @media screen and (max-width: 834px) { .admin-settings .demo .sidebar .ad-vertical .ad-usual { display: none; }
   .admin-settings .demo .sidebar .ad-vertical .ad-additional-vertical { display: block; } }
-.admin-settings .demo .blogcard-wrap { margin: 24px auto; padding: 0; width: 90%; background-color: #fff; }
+.admin-settings .demo .blogcard-wrap { margin-left: auto; margin-right: auto; padding: 0; width: 90%; background-color: #fff; }
 .admin-settings .demo .blogcard { padding: 1.6% 2.2% 2%; border: 1px solid #ccc; border-radius: 4px; line-height: 1.6; position: relative; }
 .admin-settings .demo .blogcard-thumbnail { float: left; margin-top: 3px; width: 160px; }
 .admin-settings .demo .blogcard-thumbnail img { width: 100%; }
@@ -854,7 +855,7 @@ https://codepen.io/nxworld/pen/oLdoWb
 .admin-settings .demo .is-style-light-box, .admin-settings .demo .light-box { color: #818182; background-color: #fefefe; border-color: #fdfdfe; padding: 15px; border-radius: 4px; margin-bottom: 20px; }
 .admin-settings .demo .is-style-dark-box, .admin-settings .demo .dark-box { color: #1b1e21; background-color: #d6d8d9; border-color: #c6c8ca; padding: 15px; border-radius: 4px; margin-bottom: 20px; }
 .admin-settings .demo .is-style-information-box, .admin-settings .demo .is-style-question-box, .admin-settings .demo .is-style-alert-box, .admin-settings .demo .is-style-memo-box, .admin-settings .demo .is-style-comment-box, .admin-settings .demo .is-style-ok-box, .admin-settings .demo .is-style-ng-box, .admin-settings .demo .is-style-good-box, .admin-settings .demo .is-style-bad-box, .admin-settings .demo .is-style-profile-box, .admin-settings .demo .information-box, .admin-settings .demo .question-box, .admin-settings .demo .alert-box, .admin-settings .demo .information, .admin-settings .demo .question, .admin-settings .demo .alert, .admin-settings .demo .memo-box, .admin-settings .demo .comment-box, .admin-settings .demo .common-icon-box { padding: 20px 20px 20px 72px; border-radius: 4px; position: relative; display: block; }
-.admin-settings .demo .article blockquote :last-child, .admin-settings .demo .article .wp-block-media-text__content :last-child, .admin-settings .demo .article .wp-block-columns :last-child, .admin-settings .demo .article .column-left :last-child, .admin-settings .demo .article .column-center :last-child, .admin-settings .demo .article .column-right :last-child, .admin-settings .demo .article .column-wrap :last-child, .admin-settings .demo .article .timeline-box :last-child, .admin-settings .demo .article .wp-block-cover :last-child, .admin-settings .demo .article .blogcard-type :last-child, .admin-settings .demo .article .btn-wrap :last-child, .admin-settings .demo .article .wp-block-group :last-child, .admin-settings .demo .article .wp-block-gallery :last-child, .admin-settings .demo .article .block-box :last-child, .admin-settings .demo .article .blank-box :last-child, .admin-settings .demo .article .is-style-blank-box-red :last-child, .admin-settings .demo .article .is-style-blank-box-navy :last-child, .admin-settings .demo .article .is-style-blank-box-blue :last-child, .admin-settings .demo .article .is-style-blank-box-yellow :last-child, .admin-settings .demo .article .is-style-blank-box-green :last-child, .admin-settings .demo .article .is-style-blank-box-pink :last-child, .admin-settings .demo .article .is-style-blank-box-orange :last-child, .admin-settings .demo .article .is-style-sticky-gray :last-child, .admin-settings .demo .article .is-style-sticky-yellow :last-child, .admin-settings .demo .article .is-style-sticky-red :last-child, .admin-settings .demo .article .is-style-sticky-blue :last-child, .admin-settings .demo .article .is-style-sticky-green :last-child, .admin-settings .demo .article .toc :last-child { margin-bottom: 0; }
+.admin-settings .demo .article blockquote :last-child, .admin-settings .demo .article .wp-block-media-text__content :last-child, .admin-settings .demo .article .wp-block-columns :last-child, .admin-settings .demo .article .column-left :last-child, .admin-settings .demo .article .column-center :last-child, .admin-settings .demo .article .column-right :last-child, .admin-settings .demo .article .column-wrap :last-child, .admin-settings .demo .article .timeline-box :last-child, .admin-settings .demo .article .wp-block-cover :last-child, .admin-settings .demo .article .blogcard-type :last-child, .admin-settings .demo .article .btn-wrap :last-child, .admin-settings .demo .article .wp-block-group :last-child, .admin-settings .demo .article .wp-block-gallery :last-child, .admin-settings .demo .article .block-box :last-child, .admin-settings .demo .article .blank-box :last-child, .admin-settings .demo .article .is-style-blank-box-red :last-child, .admin-settings .demo .article .is-style-blank-box-navy :last-child, .admin-settings .demo .article .is-style-blank-box-blue :last-child, .admin-settings .demo .article .is-style-blank-box-yellow :last-child, .admin-settings .demo .article .is-style-blank-box-green :last-child, .admin-settings .demo .article .is-style-blank-box-pink :last-child, .admin-settings .demo .article .is-style-blank-box-orange :last-child, .admin-settings .demo .article .is-style-sticky-gray :last-child, .admin-settings .demo .article .is-style-sticky-yellow :last-child, .admin-settings .demo .article .is-style-sticky-red :last-child, .admin-settings .demo .article .is-style-sticky-blue :last-child, .admin-settings .demo .article .is-style-sticky-green :last-child, .admin-settings .demo .article .common-icon-box :last-child, .admin-settings .demo .article .info-box :last-child, .admin-settings .demo .article .primary-box :last-child, .admin-settings .demo .article .success-box :last-child, .admin-settings .demo .article .warning-box :last-child, .admin-settings .demo .article .danger-box :last-child, .admin-settings .demo .article .secondary-box :last-child, .admin-settings .demo .article .light-box :last-child, .admin-settings .demo .article .dark-box :last-child, .admin-settings .demo .article .toc :last-child { margin-bottom: 0; }
 .admin-settings .demo .article div.scrollable-table table, .admin-settings .demo .article .wp-block-table table { margin-bottom: 0; }
 .admin-settings .demo .article .wp-block-table .scrollable-table { margin-bottom: 0; }
 .admin-settings .demo .is-style-information-box, .admin-settings .demo .information-box, .admin-settings .demo .information { background: #f3fafe; border: 1px solid #bde4fc; }
@@ -985,7 +986,7 @@ https://codepen.io/nxworld/pen/oLdoWb
   .admin-settings .demo .search-form div.sform { min-width: 180px; }
   .admin-settings .demo .search-form div.sbtn { padding-left: 5px; padding-right: 10px; }
   .admin-settings .demo .search-form div.sbtn::after { font-size: 20px; margin-left: -10px; } }
-.admin-settings .demo .btn-wrap { min-height: 2em; margin: 1.6em 0; }
+.admin-settings .demo .btn-wrap { min-height: 2em; }
 .admin-settings .demo .btn-wrap img[width="1"] { position: absolute; bottom: 0; right: 0; }
 .admin-settings .demo .btn, .admin-settings .demo .ranking-item-link-buttons a, .admin-settings .demo .btn-wrap > a, .admin-settings .demo .wp-block-freeform .btn-wrap > a { color: #fff; background-color: #32373c; font-weight: bold; border-radius: 4px; display: inline-block; cursor: pointer; line-height: normal; padding: 7px 13px; text-decoration: none; text-align: center; font-size: 14px; border: 2px solid transparent; position: relative; }
 .admin-settings .demo .btn amp-img, .admin-settings .demo .ranking-item-link-buttons a amp-img, .admin-settings .demo .btn-wrap > a amp-img, .admin-settings .demo .wp-block-freeform .btn-wrap > a amp-img { position: absolute; }
@@ -1058,86 +1059,86 @@ https://codepen.io/nxworld/pen/oLdoWb
 .admin-settings .demo .micro-copy.alignleft, .admin-settings .demo .micro-copy.alignright { float: none; }
 .admin-settings .demo .micro-copy.alignright { margin-left: auto; }
 .admin-settings .demo .mc-circle { border-radius: 2em; background-clip: padding-box; }
-.admin-settings .demo .mc-red { background-color: #e60033; color: #fff; border: none; }
-.admin-settings .demo .mc-red.micro-bottom::after { border-bottom-color: #e60033; border-top-color: transparent; }
-.admin-settings .demo .mc-red::before { border-top-color: transparent; border-bottom-color: transparent; }
-.admin-settings .demo .mc-red::after { border-top-color: #e60033; }
-.admin-settings .demo .mc-pink { background-color: #e95295; color: #fff; border: none; }
-.admin-settings .demo .mc-pink.micro-bottom::after { border-bottom-color: #e95295; border-top-color: transparent; }
-.admin-settings .demo .mc-pink::before { border-top-color: transparent; border-bottom-color: transparent; }
-.admin-settings .demo .mc-pink::after { border-top-color: #e95295; }
-.admin-settings .demo .mc-purple { background-color: #884898; color: #fff; border: none; }
-.admin-settings .demo .mc-purple.micro-bottom::after { border-bottom-color: #884898; border-top-color: transparent; }
-.admin-settings .demo .mc-purple::before { border-top-color: transparent; border-bottom-color: transparent; }
-.admin-settings .demo .mc-purple::after { border-top-color: #884898; }
-.admin-settings .demo .mc-blue { background-color: #0095d9; color: #fff; border: none; }
-.admin-settings .demo .mc-blue.micro-bottom::after { border-bottom-color: #0095d9; border-top-color: transparent; }
-.admin-settings .demo .mc-blue::before { border-top-color: transparent; border-bottom-color: transparent; }
-.admin-settings .demo .mc-blue::after { border-top-color: #0095d9; }
-.admin-settings .demo .mc-green { background-color: #3eb370; color: #fff; border: none; }
-.admin-settings .demo .mc-green.micro-bottom::after { border-bottom-color: #3eb370; border-top-color: transparent; }
-.admin-settings .demo .mc-green::before { border-top-color: transparent; border-bottom-color: transparent; }
-.admin-settings .demo .mc-green::after { border-top-color: #3eb370; }
-.admin-settings .demo .mc-orange { background-color: #f39800; color: #fff; border: none; }
-.admin-settings .demo .mc-orange.micro-bottom::after { border-bottom-color: #f39800; border-top-color: transparent; }
-.admin-settings .demo .mc-orange::before { border-top-color: transparent; border-bottom-color: transparent; }
-.admin-settings .demo .mc-orange::after { border-top-color: #f39800; }
-.admin-settings .demo .mc-yellow { background-color: #ffd900; color: #fff; border: none; }
-.admin-settings .demo .mc-yellow.micro-bottom::after { border-bottom-color: #ffd900; border-top-color: transparent; }
-.admin-settings .demo .mc-yellow::before { border-top-color: transparent; border-bottom-color: transparent; }
-.admin-settings .demo .mc-yellow::after { border-top-color: #ffd900; }
-.admin-settings .demo .mc-brown { background-color: #954e2a; color: #fff; border: none; }
-.admin-settings .demo .mc-brown.micro-bottom::after { border-bottom-color: #954e2a; border-top-color: transparent; }
-.admin-settings .demo .mc-brown::before { border-top-color: transparent; border-bottom-color: transparent; }
-.admin-settings .demo .mc-brown::after { border-top-color: #954e2a; }
-.admin-settings .demo .mc-grey { background-color: #949495; color: #fff; border: none; }
-.admin-settings .demo .mc-grey.micro-bottom::after { border-bottom-color: #949495; border-top-color: transparent; }
-.admin-settings .demo .mc-grey::before { border-top-color: transparent; border-bottom-color: transparent; }
-.admin-settings .demo .mc-grey::after { border-top-color: #949495; }
-.admin-settings .demo .mc-black { background-color: #333; color: #fff; border: none; }
-.admin-settings .demo .mc-black.micro-bottom::after { border-bottom-color: #333; border-top-color: transparent; }
-.admin-settings .demo .mc-black::before { border-top-color: transparent; border-bottom-color: transparent; }
-.admin-settings .demo .mc-black::after { border-top-color: #333; }
-.admin-settings .demo .mc-deep { background-color: #55295b; color: #fff; border: none; }
-.admin-settings .demo .mc-deep.micro-bottom::after { border-bottom-color: #55295b; border-top-color: transparent; }
-.admin-settings .demo .mc-deep::before { border-top-color: transparent; border-bottom-color: transparent; }
-.admin-settings .demo .mc-deep::after { border-top-color: #55295b; }
-.admin-settings .demo .mc-indigo { background-color: #1e50a2; color: #fff; border: none; }
-.admin-settings .demo .mc-indigo.micro-bottom::after { border-bottom-color: #1e50a2; border-top-color: transparent; }
-.admin-settings .demo .mc-indigo::before { border-top-color: transparent; border-bottom-color: transparent; }
-.admin-settings .demo .mc-indigo::after { border-top-color: #1e50a2; }
-.admin-settings .demo .mc-light-blue { background-color: #2ca9e1; color: #fff; border: none; }
-.admin-settings .demo .mc-light-blue.micro-bottom::after { border-bottom-color: #2ca9e1; border-top-color: transparent; }
-.admin-settings .demo .mc-light-blue::before { border-top-color: transparent; border-bottom-color: transparent; }
-.admin-settings .demo .mc-light-blue::after { border-top-color: #2ca9e1; }
-.admin-settings .demo .mc-cyan { background-color: #00a3af; color: #fff; border: none; }
-.admin-settings .demo .mc-cyan.micro-bottom::after { border-bottom-color: #00a3af; border-top-color: transparent; }
-.admin-settings .demo .mc-cyan::before { border-top-color: transparent; border-bottom-color: transparent; }
-.admin-settings .demo .mc-cyan::after { border-top-color: #00a3af; }
-.admin-settings .demo .mc-teal { background-color: #007b43; color: #fff; border: none; }
-.admin-settings .demo .mc-teal.micro-bottom::after { border-bottom-color: #007b43; border-top-color: transparent; }
-.admin-settings .demo .mc-teal::before { border-top-color: transparent; border-bottom-color: transparent; }
-.admin-settings .demo .mc-teal::after { border-top-color: #007b43; }
-.admin-settings .demo .mc-light-green { background-color: #8bc34a; color: #fff; border: none; }
-.admin-settings .demo .mc-light-green.micro-bottom::after { border-bottom-color: #8bc34a; border-top-color: transparent; }
-.admin-settings .demo .mc-light-green::before { border-top-color: transparent; border-bottom-color: transparent; }
-.admin-settings .demo .mc-light-green::after { border-top-color: #8bc34a; }
-.admin-settings .demo .mc-lime { background-color: #c3d825; color: #fff; border: none; }
-.admin-settings .demo .mc-lime.micro-bottom::after { border-bottom-color: #c3d825; border-top-color: transparent; }
-.admin-settings .demo .mc-lime::before { border-top-color: transparent; border-bottom-color: transparent; }
-.admin-settings .demo .mc-lime::after { border-top-color: #c3d825; }
-.admin-settings .demo .mc-amber { background-color: #ffc107; color: #fff; border: none; }
-.admin-settings .demo .mc-amber.micro-bottom::after { border-bottom-color: #ffc107; border-top-color: transparent; }
-.admin-settings .demo .mc-amber::before { border-top-color: transparent; border-bottom-color: transparent; }
-.admin-settings .demo .mc-amber::after { border-top-color: #ffc107; }
-.admin-settings .demo .mc-deep-orange { background-color: #ea5506; color: #fff; border: none; }
-.admin-settings .demo .mc-deep-orange.micro-bottom::after { border-bottom-color: #ea5506; border-top-color: transparent; }
-.admin-settings .demo .mc-deep-orange::before { border-top-color: transparent; border-bottom-color: transparent; }
-.admin-settings .demo .mc-deep-orange::after { border-top-color: #ea5506; }
-.admin-settings .demo .mc-white { background-color: #fff; color: #fff; border: none; }
-.admin-settings .demo .mc-white.micro-bottom::after { border-bottom-color: #fff; border-top-color: transparent; }
-.admin-settings .demo .mc-white::before { border-top-color: transparent; border-bottom-color: transparent; }
-.admin-settings .demo .mc-white::after { border-top-color: #fff; }
+.admin-settings .demo .micro-balloon.mc-red { background-color: #e60033; color: #fff; border: none; }
+.admin-settings .demo .micro-balloon.mc-red.micro-bottom::after { border-bottom-color: #e60033; border-top-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-red::before { border-top-color: transparent; border-bottom-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-red::after { border-top-color: #e60033; }
+.admin-settings .demo .micro-balloon.mc-pink { background-color: #e95295; color: #fff; border: none; }
+.admin-settings .demo .micro-balloon.mc-pink.micro-bottom::after { border-bottom-color: #e95295; border-top-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-pink::before { border-top-color: transparent; border-bottom-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-pink::after { border-top-color: #e95295; }
+.admin-settings .demo .micro-balloon.mc-purple { background-color: #884898; color: #fff; border: none; }
+.admin-settings .demo .micro-balloon.mc-purple.micro-bottom::after { border-bottom-color: #884898; border-top-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-purple::before { border-top-color: transparent; border-bottom-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-purple::after { border-top-color: #884898; }
+.admin-settings .demo .micro-balloon.mc-blue { background-color: #0095d9; color: #fff; border: none; }
+.admin-settings .demo .micro-balloon.mc-blue.micro-bottom::after { border-bottom-color: #0095d9; border-top-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-blue::before { border-top-color: transparent; border-bottom-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-blue::after { border-top-color: #0095d9; }
+.admin-settings .demo .micro-balloon.mc-green { background-color: #3eb370; color: #fff; border: none; }
+.admin-settings .demo .micro-balloon.mc-green.micro-bottom::after { border-bottom-color: #3eb370; border-top-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-green::before { border-top-color: transparent; border-bottom-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-green::after { border-top-color: #3eb370; }
+.admin-settings .demo .micro-balloon.mc-orange { background-color: #f39800; color: #fff; border: none; }
+.admin-settings .demo .micro-balloon.mc-orange.micro-bottom::after { border-bottom-color: #f39800; border-top-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-orange::before { border-top-color: transparent; border-bottom-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-orange::after { border-top-color: #f39800; }
+.admin-settings .demo .micro-balloon.mc-yellow { background-color: #ffd900; color: #fff; border: none; }
+.admin-settings .demo .micro-balloon.mc-yellow.micro-bottom::after { border-bottom-color: #ffd900; border-top-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-yellow::before { border-top-color: transparent; border-bottom-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-yellow::after { border-top-color: #ffd900; }
+.admin-settings .demo .micro-balloon.mc-brown { background-color: #954e2a; color: #fff; border: none; }
+.admin-settings .demo .micro-balloon.mc-brown.micro-bottom::after { border-bottom-color: #954e2a; border-top-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-brown::before { border-top-color: transparent; border-bottom-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-brown::after { border-top-color: #954e2a; }
+.admin-settings .demo .micro-balloon.mc-grey { background-color: #949495; color: #fff; border: none; }
+.admin-settings .demo .micro-balloon.mc-grey.micro-bottom::after { border-bottom-color: #949495; border-top-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-grey::before { border-top-color: transparent; border-bottom-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-grey::after { border-top-color: #949495; }
+.admin-settings .demo .micro-balloon.mc-black { background-color: #333; color: #fff; border: none; }
+.admin-settings .demo .micro-balloon.mc-black.micro-bottom::after { border-bottom-color: #333; border-top-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-black::before { border-top-color: transparent; border-bottom-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-black::after { border-top-color: #333; }
+.admin-settings .demo .micro-balloon.mc-deep { background-color: #55295b; color: #fff; border: none; }
+.admin-settings .demo .micro-balloon.mc-deep.micro-bottom::after { border-bottom-color: #55295b; border-top-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-deep::before { border-top-color: transparent; border-bottom-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-deep::after { border-top-color: #55295b; }
+.admin-settings .demo .micro-balloon.mc-indigo { background-color: #1e50a2; color: #fff; border: none; }
+.admin-settings .demo .micro-balloon.mc-indigo.micro-bottom::after { border-bottom-color: #1e50a2; border-top-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-indigo::before { border-top-color: transparent; border-bottom-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-indigo::after { border-top-color: #1e50a2; }
+.admin-settings .demo .micro-balloon.mc-light-blue { background-color: #2ca9e1; color: #fff; border: none; }
+.admin-settings .demo .micro-balloon.mc-light-blue.micro-bottom::after { border-bottom-color: #2ca9e1; border-top-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-light-blue::before { border-top-color: transparent; border-bottom-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-light-blue::after { border-top-color: #2ca9e1; }
+.admin-settings .demo .micro-balloon.mc-cyan { background-color: #00a3af; color: #fff; border: none; }
+.admin-settings .demo .micro-balloon.mc-cyan.micro-bottom::after { border-bottom-color: #00a3af; border-top-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-cyan::before { border-top-color: transparent; border-bottom-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-cyan::after { border-top-color: #00a3af; }
+.admin-settings .demo .micro-balloon.mc-teal { background-color: #007b43; color: #fff; border: none; }
+.admin-settings .demo .micro-balloon.mc-teal.micro-bottom::after { border-bottom-color: #007b43; border-top-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-teal::before { border-top-color: transparent; border-bottom-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-teal::after { border-top-color: #007b43; }
+.admin-settings .demo .micro-balloon.mc-light-green { background-color: #8bc34a; color: #fff; border: none; }
+.admin-settings .demo .micro-balloon.mc-light-green.micro-bottom::after { border-bottom-color: #8bc34a; border-top-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-light-green::before { border-top-color: transparent; border-bottom-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-light-green::after { border-top-color: #8bc34a; }
+.admin-settings .demo .micro-balloon.mc-lime { background-color: #c3d825; color: #fff; border: none; }
+.admin-settings .demo .micro-balloon.mc-lime.micro-bottom::after { border-bottom-color: #c3d825; border-top-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-lime::before { border-top-color: transparent; border-bottom-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-lime::after { border-top-color: #c3d825; }
+.admin-settings .demo .micro-balloon.mc-amber { background-color: #ffc107; color: #fff; border: none; }
+.admin-settings .demo .micro-balloon.mc-amber.micro-bottom::after { border-bottom-color: #ffc107; border-top-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-amber::before { border-top-color: transparent; border-bottom-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-amber::after { border-top-color: #ffc107; }
+.admin-settings .demo .micro-balloon.mc-deep-orange { background-color: #ea5506; color: #fff; border: none; }
+.admin-settings .demo .micro-balloon.mc-deep-orange.micro-bottom::after { border-bottom-color: #ea5506; border-top-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-deep-orange::before { border-top-color: transparent; border-bottom-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-deep-orange::after { border-top-color: #ea5506; }
+.admin-settings .demo .micro-balloon.mc-white { background-color: #fff; color: #fff; border: none; }
+.admin-settings .demo .micro-balloon.mc-white.micro-bottom::after { border-bottom-color: #fff; border-top-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-white::before { border-top-color: transparent; border-bottom-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-white::after { border-top-color: #fff; }
 .admin-settings .demo .blogcard-label { position: absolute; top: -18px; left: 16px; font-size: 13px; padding: 3px 0.6em; background-color: #333; color: #fff; border-radius: 3px; letter-spacing: 0.7px; display: none; }
 .admin-settings .demo .blogcard-label .fa::before { margin-right: 6px; }
 .admin-settings .demo .blogcard-type .blogcard-label { display: block; }
@@ -1373,6 +1374,7 @@ https://codepen.io/nxworld/pen/oLdoWb
 .admin-settings .demo .wp-block-separator.is-style-wide { border-bottom: solid 3px !important; }
 @media screen and (min-width: 600px) and (max-width: 781px) { .admin-settings .demo .article .wp-block-columns :nth-child(odd):nth-last-child(2) { margin-bottom: 0; } }
 @media screen and (min-width: 600px) { .admin-settings .demo .column-wrap > * { margin-bottom: 0 !important; } }
+.admin-settings .demo .body .wp-block-gallery .blocks-gallery-item { margin-bottom: 1em; }
 .admin-settings .demo .column-wrap { display: flex; justify-content: space-between; position: relative; margin: 0; }
 .admin-settings .demo .column-wrap > div { width: 49.5%; margin: 0; }
 .admin-settings .demo .column-wrap > div > *:first-child { margin-top: 0; }
@@ -1999,6 +2001,7 @@ https://codepen.io/nxworld/pen/oLdoWb
 .admin-settings .demo a { color: #1967d2; }
 .admin-settings .demo a:hover { color: #e53900; }
 .admin-settings .demo ol, .admin-settings .demo ul { padding-left: 40px; }
+.admin-settings .demo ul { list-style-type: disc; }
 .admin-settings .demo hr { color: #eee; }
 .admin-settings .demo .cf::after { clear: both; content: ""; display: block; }
 .admin-settings .demo .header-container, .admin-settings .demo .main, .admin-settings .demo .sidebar, .admin-settings .demo .footer { background-color: #fff; }
@@ -2240,7 +2243,7 @@ https://codepen.io/nxworld/pen/oLdoWb
 .admin-settings .demo .scrollable-table.stfc-sticky tr > *:first-child { background-color: #e9eff2; color: #333; position: sticky; position: -webkit-sticky; left: 0; z-index: 2; }
 .admin-settings .demo .scrollable-table table { border-collapse: collapse; max-width: none; margin: 0; }
 .admin-settings .demo .scrollable-table th { background-color: #eee; }
-.admin-settings .demo .scrollable-table th, .admin-settings .demo .scrollable-table td { border: solid 1px #ccc; padding: 3px 5px; white-space: nowrap; }
+.admin-settings .demo .scrollable-table th, .admin-settings .demo .scrollable-table td { padding: 3px 5px; white-space: nowrap; }
 .admin-settings .demo .scrollable-table { overflow-x: auto !important; overflow-y: hidden !important; }
 .admin-settings .demo figure.wp-block-table table { width: auto; }
 .admin-settings .demo figure.wp-block-table.alignwide table, .admin-settings .demo figure.wp-block-table.alignfull table { width: 100%; }
@@ -2297,7 +2300,7 @@ https://codepen.io/nxworld/pen/oLdoWb
 .admin-settings .demo .sidebar .ad-additional-vertical { display: none; }
 @media screen and (max-width: 834px) { .admin-settings .demo .sidebar .ad-vertical .ad-usual { display: none; }
   .admin-settings .demo .sidebar .ad-vertical .ad-additional-vertical { display: block; } }
-.admin-settings .demo .blogcard-wrap { margin: 24px auto; padding: 0; width: 90%; background-color: #fff; }
+.admin-settings .demo .blogcard-wrap { margin-left: auto; margin-right: auto; padding: 0; width: 90%; background-color: #fff; }
 .admin-settings .demo .blogcard { padding: 1.6% 2.2% 2%; border: 1px solid #ccc; border-radius: 4px; line-height: 1.6; position: relative; }
 .admin-settings .demo .blogcard-thumbnail { float: left; margin-top: 3px; width: 160px; }
 .admin-settings .demo .blogcard-thumbnail img { width: 100%; }
@@ -2452,7 +2455,7 @@ https://codepen.io/nxworld/pen/oLdoWb
 .admin-settings .demo .is-style-light-box, .admin-settings .demo .light-box { color: #818182; background-color: #fefefe; border-color: #fdfdfe; padding: 15px; border-radius: 4px; margin-bottom: 20px; }
 .admin-settings .demo .is-style-dark-box, .admin-settings .demo .dark-box { color: #1b1e21; background-color: #d6d8d9; border-color: #c6c8ca; padding: 15px; border-radius: 4px; margin-bottom: 20px; }
 .admin-settings .demo .is-style-information-box, .admin-settings .demo .is-style-question-box, .admin-settings .demo .is-style-alert-box, .admin-settings .demo .is-style-memo-box, .admin-settings .demo .is-style-comment-box, .admin-settings .demo .is-style-ok-box, .admin-settings .demo .is-style-ng-box, .admin-settings .demo .is-style-good-box, .admin-settings .demo .is-style-bad-box, .admin-settings .demo .is-style-profile-box, .admin-settings .demo .information-box, .admin-settings .demo .question-box, .admin-settings .demo .alert-box, .admin-settings .demo .information, .admin-settings .demo .question, .admin-settings .demo .alert, .admin-settings .demo .memo-box, .admin-settings .demo .comment-box, .admin-settings .demo .common-icon-box { padding: 20px 20px 20px 72px; border-radius: 4px; position: relative; display: block; }
-.admin-settings .demo .article blockquote :last-child, .admin-settings .demo .article .wp-block-media-text__content :last-child, .admin-settings .demo .article .wp-block-columns :last-child, .admin-settings .demo .article .column-left :last-child, .admin-settings .demo .article .column-center :last-child, .admin-settings .demo .article .column-right :last-child, .admin-settings .demo .article .column-wrap :last-child, .admin-settings .demo .article .timeline-box :last-child, .admin-settings .demo .article .wp-block-cover :last-child, .admin-settings .demo .article .blogcard-type :last-child, .admin-settings .demo .article .btn-wrap :last-child, .admin-settings .demo .article .wp-block-group :last-child, .admin-settings .demo .article .wp-block-gallery :last-child, .admin-settings .demo .article .block-box :last-child, .admin-settings .demo .article .blank-box :last-child, .admin-settings .demo .article .is-style-blank-box-red :last-child, .admin-settings .demo .article .is-style-blank-box-navy :last-child, .admin-settings .demo .article .is-style-blank-box-blue :last-child, .admin-settings .demo .article .is-style-blank-box-yellow :last-child, .admin-settings .demo .article .is-style-blank-box-green :last-child, .admin-settings .demo .article .is-style-blank-box-pink :last-child, .admin-settings .demo .article .is-style-blank-box-orange :last-child, .admin-settings .demo .article .is-style-sticky-gray :last-child, .admin-settings .demo .article .is-style-sticky-yellow :last-child, .admin-settings .demo .article .is-style-sticky-red :last-child, .admin-settings .demo .article .is-style-sticky-blue :last-child, .admin-settings .demo .article .is-style-sticky-green :last-child, .admin-settings .demo .article .toc :last-child { margin-bottom: 0; }
+.admin-settings .demo .article blockquote :last-child, .admin-settings .demo .article .wp-block-media-text__content :last-child, .admin-settings .demo .article .wp-block-columns :last-child, .admin-settings .demo .article .column-left :last-child, .admin-settings .demo .article .column-center :last-child, .admin-settings .demo .article .column-right :last-child, .admin-settings .demo .article .column-wrap :last-child, .admin-settings .demo .article .timeline-box :last-child, .admin-settings .demo .article .wp-block-cover :last-child, .admin-settings .demo .article .blogcard-type :last-child, .admin-settings .demo .article .btn-wrap :last-child, .admin-settings .demo .article .wp-block-group :last-child, .admin-settings .demo .article .wp-block-gallery :last-child, .admin-settings .demo .article .block-box :last-child, .admin-settings .demo .article .blank-box :last-child, .admin-settings .demo .article .is-style-blank-box-red :last-child, .admin-settings .demo .article .is-style-blank-box-navy :last-child, .admin-settings .demo .article .is-style-blank-box-blue :last-child, .admin-settings .demo .article .is-style-blank-box-yellow :last-child, .admin-settings .demo .article .is-style-blank-box-green :last-child, .admin-settings .demo .article .is-style-blank-box-pink :last-child, .admin-settings .demo .article .is-style-blank-box-orange :last-child, .admin-settings .demo .article .is-style-sticky-gray :last-child, .admin-settings .demo .article .is-style-sticky-yellow :last-child, .admin-settings .demo .article .is-style-sticky-red :last-child, .admin-settings .demo .article .is-style-sticky-blue :last-child, .admin-settings .demo .article .is-style-sticky-green :last-child, .admin-settings .demo .article .common-icon-box :last-child, .admin-settings .demo .article .info-box :last-child, .admin-settings .demo .article .primary-box :last-child, .admin-settings .demo .article .success-box :last-child, .admin-settings .demo .article .warning-box :last-child, .admin-settings .demo .article .danger-box :last-child, .admin-settings .demo .article .secondary-box :last-child, .admin-settings .demo .article .light-box :last-child, .admin-settings .demo .article .dark-box :last-child, .admin-settings .demo .article .toc :last-child { margin-bottom: 0; }
 .admin-settings .demo .article div.scrollable-table table, .admin-settings .demo .article .wp-block-table table { margin-bottom: 0; }
 .admin-settings .demo .article .wp-block-table .scrollable-table { margin-bottom: 0; }
 .admin-settings .demo .is-style-information-box, .admin-settings .demo .information-box, .admin-settings .demo .information { background: #f3fafe; border: 1px solid #bde4fc; }
@@ -2583,7 +2586,7 @@ https://codepen.io/nxworld/pen/oLdoWb
   .admin-settings .demo .search-form div.sform { min-width: 180px; }
   .admin-settings .demo .search-form div.sbtn { padding-left: 5px; padding-right: 10px; }
   .admin-settings .demo .search-form div.sbtn::after { font-size: 20px; margin-left: -10px; } }
-.admin-settings .demo .btn-wrap { min-height: 2em; margin: 1.6em 0; }
+.admin-settings .demo .btn-wrap { min-height: 2em; }
 .admin-settings .demo .btn-wrap img[width="1"] { position: absolute; bottom: 0; right: 0; }
 .admin-settings .demo .btn, .admin-settings .demo .ranking-item-link-buttons a, .admin-settings .demo .btn-wrap > a, .admin-settings .demo .wp-block-freeform .btn-wrap > a { color: #fff; background-color: #32373c; font-weight: bold; border-radius: 4px; display: inline-block; cursor: pointer; line-height: normal; padding: 7px 13px; text-decoration: none; text-align: center; font-size: 14px; border: 2px solid transparent; position: relative; }
 .admin-settings .demo .btn amp-img, .admin-settings .demo .ranking-item-link-buttons a amp-img, .admin-settings .demo .btn-wrap > a amp-img, .admin-settings .demo .wp-block-freeform .btn-wrap > a amp-img { position: absolute; }
@@ -2656,86 +2659,86 @@ https://codepen.io/nxworld/pen/oLdoWb
 .admin-settings .demo .micro-copy.alignleft, .admin-settings .demo .micro-copy.alignright { float: none; }
 .admin-settings .demo .micro-copy.alignright { margin-left: auto; }
 .admin-settings .demo .mc-circle { border-radius: 2em; background-clip: padding-box; }
-.admin-settings .demo .mc-red { background-color: #e60033; color: #fff; border: none; }
-.admin-settings .demo .mc-red.micro-bottom::after { border-bottom-color: #e60033; border-top-color: transparent; }
-.admin-settings .demo .mc-red::before { border-top-color: transparent; border-bottom-color: transparent; }
-.admin-settings .demo .mc-red::after { border-top-color: #e60033; }
-.admin-settings .demo .mc-pink { background-color: #e95295; color: #fff; border: none; }
-.admin-settings .demo .mc-pink.micro-bottom::after { border-bottom-color: #e95295; border-top-color: transparent; }
-.admin-settings .demo .mc-pink::before { border-top-color: transparent; border-bottom-color: transparent; }
-.admin-settings .demo .mc-pink::after { border-top-color: #e95295; }
-.admin-settings .demo .mc-purple { background-color: #884898; color: #fff; border: none; }
-.admin-settings .demo .mc-purple.micro-bottom::after { border-bottom-color: #884898; border-top-color: transparent; }
-.admin-settings .demo .mc-purple::before { border-top-color: transparent; border-bottom-color: transparent; }
-.admin-settings .demo .mc-purple::after { border-top-color: #884898; }
-.admin-settings .demo .mc-blue { background-color: #0095d9; color: #fff; border: none; }
-.admin-settings .demo .mc-blue.micro-bottom::after { border-bottom-color: #0095d9; border-top-color: transparent; }
-.admin-settings .demo .mc-blue::before { border-top-color: transparent; border-bottom-color: transparent; }
-.admin-settings .demo .mc-blue::after { border-top-color: #0095d9; }
-.admin-settings .demo .mc-green { background-color: #3eb370; color: #fff; border: none; }
-.admin-settings .demo .mc-green.micro-bottom::after { border-bottom-color: #3eb370; border-top-color: transparent; }
-.admin-settings .demo .mc-green::before { border-top-color: transparent; border-bottom-color: transparent; }
-.admin-settings .demo .mc-green::after { border-top-color: #3eb370; }
-.admin-settings .demo .mc-orange { background-color: #f39800; color: #fff; border: none; }
-.admin-settings .demo .mc-orange.micro-bottom::after { border-bottom-color: #f39800; border-top-color: transparent; }
-.admin-settings .demo .mc-orange::before { border-top-color: transparent; border-bottom-color: transparent; }
-.admin-settings .demo .mc-orange::after { border-top-color: #f39800; }
-.admin-settings .demo .mc-yellow { background-color: #ffd900; color: #fff; border: none; }
-.admin-settings .demo .mc-yellow.micro-bottom::after { border-bottom-color: #ffd900; border-top-color: transparent; }
-.admin-settings .demo .mc-yellow::before { border-top-color: transparent; border-bottom-color: transparent; }
-.admin-settings .demo .mc-yellow::after { border-top-color: #ffd900; }
-.admin-settings .demo .mc-brown { background-color: #954e2a; color: #fff; border: none; }
-.admin-settings .demo .mc-brown.micro-bottom::after { border-bottom-color: #954e2a; border-top-color: transparent; }
-.admin-settings .demo .mc-brown::before { border-top-color: transparent; border-bottom-color: transparent; }
-.admin-settings .demo .mc-brown::after { border-top-color: #954e2a; }
-.admin-settings .demo .mc-grey { background-color: #949495; color: #fff; border: none; }
-.admin-settings .demo .mc-grey.micro-bottom::after { border-bottom-color: #949495; border-top-color: transparent; }
-.admin-settings .demo .mc-grey::before { border-top-color: transparent; border-bottom-color: transparent; }
-.admin-settings .demo .mc-grey::after { border-top-color: #949495; }
-.admin-settings .demo .mc-black { background-color: #333; color: #fff; border: none; }
-.admin-settings .demo .mc-black.micro-bottom::after { border-bottom-color: #333; border-top-color: transparent; }
-.admin-settings .demo .mc-black::before { border-top-color: transparent; border-bottom-color: transparent; }
-.admin-settings .demo .mc-black::after { border-top-color: #333; }
-.admin-settings .demo .mc-deep { background-color: #55295b; color: #fff; border: none; }
-.admin-settings .demo .mc-deep.micro-bottom::after { border-bottom-color: #55295b; border-top-color: transparent; }
-.admin-settings .demo .mc-deep::before { border-top-color: transparent; border-bottom-color: transparent; }
-.admin-settings .demo .mc-deep::after { border-top-color: #55295b; }
-.admin-settings .demo .mc-indigo { background-color: #1e50a2; color: #fff; border: none; }
-.admin-settings .demo .mc-indigo.micro-bottom::after { border-bottom-color: #1e50a2; border-top-color: transparent; }
-.admin-settings .demo .mc-indigo::before { border-top-color: transparent; border-bottom-color: transparent; }
-.admin-settings .demo .mc-indigo::after { border-top-color: #1e50a2; }
-.admin-settings .demo .mc-light-blue { background-color: #2ca9e1; color: #fff; border: none; }
-.admin-settings .demo .mc-light-blue.micro-bottom::after { border-bottom-color: #2ca9e1; border-top-color: transparent; }
-.admin-settings .demo .mc-light-blue::before { border-top-color: transparent; border-bottom-color: transparent; }
-.admin-settings .demo .mc-light-blue::after { border-top-color: #2ca9e1; }
-.admin-settings .demo .mc-cyan { background-color: #00a3af; color: #fff; border: none; }
-.admin-settings .demo .mc-cyan.micro-bottom::after { border-bottom-color: #00a3af; border-top-color: transparent; }
-.admin-settings .demo .mc-cyan::before { border-top-color: transparent; border-bottom-color: transparent; }
-.admin-settings .demo .mc-cyan::after { border-top-color: #00a3af; }
-.admin-settings .demo .mc-teal { background-color: #007b43; color: #fff; border: none; }
-.admin-settings .demo .mc-teal.micro-bottom::after { border-bottom-color: #007b43; border-top-color: transparent; }
-.admin-settings .demo .mc-teal::before { border-top-color: transparent; border-bottom-color: transparent; }
-.admin-settings .demo .mc-teal::after { border-top-color: #007b43; }
-.admin-settings .demo .mc-light-green { background-color: #8bc34a; color: #fff; border: none; }
-.admin-settings .demo .mc-light-green.micro-bottom::after { border-bottom-color: #8bc34a; border-top-color: transparent; }
-.admin-settings .demo .mc-light-green::before { border-top-color: transparent; border-bottom-color: transparent; }
-.admin-settings .demo .mc-light-green::after { border-top-color: #8bc34a; }
-.admin-settings .demo .mc-lime { background-color: #c3d825; color: #fff; border: none; }
-.admin-settings .demo .mc-lime.micro-bottom::after { border-bottom-color: #c3d825; border-top-color: transparent; }
-.admin-settings .demo .mc-lime::before { border-top-color: transparent; border-bottom-color: transparent; }
-.admin-settings .demo .mc-lime::after { border-top-color: #c3d825; }
-.admin-settings .demo .mc-amber { background-color: #ffc107; color: #fff; border: none; }
-.admin-settings .demo .mc-amber.micro-bottom::after { border-bottom-color: #ffc107; border-top-color: transparent; }
-.admin-settings .demo .mc-amber::before { border-top-color: transparent; border-bottom-color: transparent; }
-.admin-settings .demo .mc-amber::after { border-top-color: #ffc107; }
-.admin-settings .demo .mc-deep-orange { background-color: #ea5506; color: #fff; border: none; }
-.admin-settings .demo .mc-deep-orange.micro-bottom::after { border-bottom-color: #ea5506; border-top-color: transparent; }
-.admin-settings .demo .mc-deep-orange::before { border-top-color: transparent; border-bottom-color: transparent; }
-.admin-settings .demo .mc-deep-orange::after { border-top-color: #ea5506; }
-.admin-settings .demo .mc-white { background-color: #fff; color: #fff; border: none; }
-.admin-settings .demo .mc-white.micro-bottom::after { border-bottom-color: #fff; border-top-color: transparent; }
-.admin-settings .demo .mc-white::before { border-top-color: transparent; border-bottom-color: transparent; }
-.admin-settings .demo .mc-white::after { border-top-color: #fff; }
+.admin-settings .demo .micro-balloon.mc-red { background-color: #e60033; color: #fff; border: none; }
+.admin-settings .demo .micro-balloon.mc-red.micro-bottom::after { border-bottom-color: #e60033; border-top-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-red::before { border-top-color: transparent; border-bottom-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-red::after { border-top-color: #e60033; }
+.admin-settings .demo .micro-balloon.mc-pink { background-color: #e95295; color: #fff; border: none; }
+.admin-settings .demo .micro-balloon.mc-pink.micro-bottom::after { border-bottom-color: #e95295; border-top-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-pink::before { border-top-color: transparent; border-bottom-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-pink::after { border-top-color: #e95295; }
+.admin-settings .demo .micro-balloon.mc-purple { background-color: #884898; color: #fff; border: none; }
+.admin-settings .demo .micro-balloon.mc-purple.micro-bottom::after { border-bottom-color: #884898; border-top-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-purple::before { border-top-color: transparent; border-bottom-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-purple::after { border-top-color: #884898; }
+.admin-settings .demo .micro-balloon.mc-blue { background-color: #0095d9; color: #fff; border: none; }
+.admin-settings .demo .micro-balloon.mc-blue.micro-bottom::after { border-bottom-color: #0095d9; border-top-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-blue::before { border-top-color: transparent; border-bottom-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-blue::after { border-top-color: #0095d9; }
+.admin-settings .demo .micro-balloon.mc-green { background-color: #3eb370; color: #fff; border: none; }
+.admin-settings .demo .micro-balloon.mc-green.micro-bottom::after { border-bottom-color: #3eb370; border-top-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-green::before { border-top-color: transparent; border-bottom-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-green::after { border-top-color: #3eb370; }
+.admin-settings .demo .micro-balloon.mc-orange { background-color: #f39800; color: #fff; border: none; }
+.admin-settings .demo .micro-balloon.mc-orange.micro-bottom::after { border-bottom-color: #f39800; border-top-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-orange::before { border-top-color: transparent; border-bottom-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-orange::after { border-top-color: #f39800; }
+.admin-settings .demo .micro-balloon.mc-yellow { background-color: #ffd900; color: #fff; border: none; }
+.admin-settings .demo .micro-balloon.mc-yellow.micro-bottom::after { border-bottom-color: #ffd900; border-top-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-yellow::before { border-top-color: transparent; border-bottom-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-yellow::after { border-top-color: #ffd900; }
+.admin-settings .demo .micro-balloon.mc-brown { background-color: #954e2a; color: #fff; border: none; }
+.admin-settings .demo .micro-balloon.mc-brown.micro-bottom::after { border-bottom-color: #954e2a; border-top-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-brown::before { border-top-color: transparent; border-bottom-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-brown::after { border-top-color: #954e2a; }
+.admin-settings .demo .micro-balloon.mc-grey { background-color: #949495; color: #fff; border: none; }
+.admin-settings .demo .micro-balloon.mc-grey.micro-bottom::after { border-bottom-color: #949495; border-top-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-grey::before { border-top-color: transparent; border-bottom-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-grey::after { border-top-color: #949495; }
+.admin-settings .demo .micro-balloon.mc-black { background-color: #333; color: #fff; border: none; }
+.admin-settings .demo .micro-balloon.mc-black.micro-bottom::after { border-bottom-color: #333; border-top-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-black::before { border-top-color: transparent; border-bottom-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-black::after { border-top-color: #333; }
+.admin-settings .demo .micro-balloon.mc-deep { background-color: #55295b; color: #fff; border: none; }
+.admin-settings .demo .micro-balloon.mc-deep.micro-bottom::after { border-bottom-color: #55295b; border-top-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-deep::before { border-top-color: transparent; border-bottom-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-deep::after { border-top-color: #55295b; }
+.admin-settings .demo .micro-balloon.mc-indigo { background-color: #1e50a2; color: #fff; border: none; }
+.admin-settings .demo .micro-balloon.mc-indigo.micro-bottom::after { border-bottom-color: #1e50a2; border-top-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-indigo::before { border-top-color: transparent; border-bottom-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-indigo::after { border-top-color: #1e50a2; }
+.admin-settings .demo .micro-balloon.mc-light-blue { background-color: #2ca9e1; color: #fff; border: none; }
+.admin-settings .demo .micro-balloon.mc-light-blue.micro-bottom::after { border-bottom-color: #2ca9e1; border-top-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-light-blue::before { border-top-color: transparent; border-bottom-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-light-blue::after { border-top-color: #2ca9e1; }
+.admin-settings .demo .micro-balloon.mc-cyan { background-color: #00a3af; color: #fff; border: none; }
+.admin-settings .demo .micro-balloon.mc-cyan.micro-bottom::after { border-bottom-color: #00a3af; border-top-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-cyan::before { border-top-color: transparent; border-bottom-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-cyan::after { border-top-color: #00a3af; }
+.admin-settings .demo .micro-balloon.mc-teal { background-color: #007b43; color: #fff; border: none; }
+.admin-settings .demo .micro-balloon.mc-teal.micro-bottom::after { border-bottom-color: #007b43; border-top-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-teal::before { border-top-color: transparent; border-bottom-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-teal::after { border-top-color: #007b43; }
+.admin-settings .demo .micro-balloon.mc-light-green { background-color: #8bc34a; color: #fff; border: none; }
+.admin-settings .demo .micro-balloon.mc-light-green.micro-bottom::after { border-bottom-color: #8bc34a; border-top-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-light-green::before { border-top-color: transparent; border-bottom-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-light-green::after { border-top-color: #8bc34a; }
+.admin-settings .demo .micro-balloon.mc-lime { background-color: #c3d825; color: #fff; border: none; }
+.admin-settings .demo .micro-balloon.mc-lime.micro-bottom::after { border-bottom-color: #c3d825; border-top-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-lime::before { border-top-color: transparent; border-bottom-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-lime::after { border-top-color: #c3d825; }
+.admin-settings .demo .micro-balloon.mc-amber { background-color: #ffc107; color: #fff; border: none; }
+.admin-settings .demo .micro-balloon.mc-amber.micro-bottom::after { border-bottom-color: #ffc107; border-top-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-amber::before { border-top-color: transparent; border-bottom-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-amber::after { border-top-color: #ffc107; }
+.admin-settings .demo .micro-balloon.mc-deep-orange { background-color: #ea5506; color: #fff; border: none; }
+.admin-settings .demo .micro-balloon.mc-deep-orange.micro-bottom::after { border-bottom-color: #ea5506; border-top-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-deep-orange::before { border-top-color: transparent; border-bottom-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-deep-orange::after { border-top-color: #ea5506; }
+.admin-settings .demo .micro-balloon.mc-white { background-color: #fff; color: #fff; border: none; }
+.admin-settings .demo .micro-balloon.mc-white.micro-bottom::after { border-bottom-color: #fff; border-top-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-white::before { border-top-color: transparent; border-bottom-color: transparent; }
+.admin-settings .demo .micro-balloon.mc-white::after { border-top-color: #fff; }
 .admin-settings .demo .blogcard-label { position: absolute; top: -18px; left: 16px; font-size: 13px; padding: 3px 0.6em; background-color: #333; color: #fff; border-radius: 3px; letter-spacing: 0.7px; display: none; }
 .admin-settings .demo .blogcard-label .fa::before { margin-right: 6px; }
 .admin-settings .demo .blogcard-type .blogcard-label { display: block; }
@@ -2971,6 +2974,7 @@ https://codepen.io/nxworld/pen/oLdoWb
 .admin-settings .demo .wp-block-separator.is-style-wide { border-bottom: solid 3px !important; }
 @media screen and (min-width: 600px) and (max-width: 781px) { .admin-settings .demo .article .wp-block-columns :nth-child(odd):nth-last-child(2) { margin-bottom: 0; } }
 @media screen and (min-width: 600px) { .admin-settings .demo .column-wrap > * { margin-bottom: 0 !important; } }
+.admin-settings .demo .body .wp-block-gallery .blocks-gallery-item { margin-bottom: 1em; }
 .admin-settings .demo .column-wrap { display: flex; justify-content: space-between; position: relative; margin: 0; }
 .admin-settings .demo .column-wrap > div { width: 49.5%; margin: 0; }
 .admin-settings .demo .column-wrap > div > *:first-child { margin-top: 0; }
@@ -3590,7 +3594,7 @@ https://codepen.io/nxworld/pen/oLdoWb
 .admin-settings .demo .carousel.loaded { opacity: 1; }
 .admin-settings .demo .ccb-carousel-border .a-wrap { border: 1px solid #ccc; }
 .admin-settings .demo .index-tab-buttons { margin: 1em 0 1.4em; display: flex; }
-.admin-settings .demo .index-tab-buttons .index-tab-button { padding: 12px 16px; font-size: 14px; margin: 2px; border-radius: 4px; background-color: #fff; border: 1px solid #eee; min-width: calc(100% / 4); width: 100%; text-align: center; }
+.admin-settings .demo .index-tab-buttons .index-tab-button { padding: 12px 16px; font-size: 14px; margin: 2px; border-radius: 4px; background-color: #fff; border: 1px solid #eee; width: 100%; text-align: center; }
 .admin-settings .demo #index-tab-1:checked ~ .index-tab-buttons .index-tab-button[for="index-tab-1"], .admin-settings .demo #index-tab-2:checked ~ .index-tab-buttons .index-tab-button[for="index-tab-2"], .admin-settings .demo #index-tab-3:checked ~ .index-tab-buttons .index-tab-button[for="index-tab-3"], .admin-settings .demo #index-tab-4:checked ~ .index-tab-buttons .index-tab-button[for="index-tab-4"] { background: none #404453; border: 1px solid #404453; color: #fff; font-weight: 700; }
 .admin-settings .demo .tab-cont, .admin-settings .demo input[name="tab_item"] { display: none; }
 @keyframes tab-index-show { 0% { opacity: 0; padding-top: 100px; }
@@ -3732,6 +3736,8 @@ https://codepen.io/nxworld/pen/oLdoWb
 .admin-settings .demo .wpforo-recent-content.wpfr-posts table { width: 100%; table-layout: fixed; word-break: break-word; word-wrap: break-word; }
 .admin-settings .demo .wpforo-recent-content.wpfr-posts table td { word-break: break-word !important; }
 .admin-settings .demo div#bbpress-forums fieldset.bbp-form input[type="text"], .admin-settings .demo div#bbpress-forums fieldset.bbp-form select { height: 46px; line-height: 46px; }
+.admin-settings .demo .body #wpforo #wpforo-wrap .wpforo-post .wpforo-post-content p { line-height: 1.4; }
+.admin-settings .demo #wpforo #wpforo-wrap .wpforo-post .wpforo-post-content hr { margin-bottom: 1em; }
 .admin-settings .demo .live-writer .main { max-width: 860px; width: 860px; min-width: 860px; }
 .admin-settings .demo .live-writer .article { width: 800px; }
 .admin-settings .demo .live-writer blockquote, .admin-settings .demo .live-writer .information-box, .admin-settings .demo .live-writer .question-box, .admin-settings .demo .live-writer .alert-box { padding: 10px; }
@@ -3991,9 +3997,11 @@ https://codepen.io/nxworld/pen/oLdoWb
 ************************************/
 pre { background-color: #f5f6f7; border: 1px solid #ddd; overflow: auto; padding: 10px; }
 
+.is-code-row-number-enable pre, .is-code-row-number-enable pre * { line-height: 1.6 !important; }
+
 .is-code-row-number-enable pre, .is-code-row-number-enable pre#highlight-demo { border: none; position: relative; padding: 0.4em 1em 0.4em 3em; }
 
-.is-code-row-number-enable pre::before { overflow: hidden; position: absolute; top: 0; left: 0; bottom: 0; display: block; padding: 0.5em 0em 0.5em 0em; width: 3em; box-sizing: border-box; color: #777; text-align: center; }
+.is-code-row-number-enable pre::before { overflow: hidden; position: absolute; top: 0; left: 0; bottom: 0; display: block; width: 3em; box-sizing: border-box; color: #777; text-align: center; padding: 0.4em 0; }
 
 /*記事一覧のサムネイル幅*/
 .column-thumbnail { width: 80px; }
@@ -4260,7 +4268,7 @@ textarea[name="the_page_memo"] { width: 100%; }
 .components-popover__content .is-style-light-box, .components-popover__content .light-box { color: #818182; background-color: #fefefe; border-color: #fdfdfe; padding: 15px; border-radius: 4px; margin-bottom: 20px; }
 .components-popover__content .is-style-dark-box, .components-popover__content .dark-box { color: #1b1e21; background-color: #d6d8d9; border-color: #c6c8ca; padding: 15px; border-radius: 4px; margin-bottom: 20px; }
 .components-popover__content .is-style-information-box, .components-popover__content .is-style-question-box, .components-popover__content .is-style-alert-box, .components-popover__content .is-style-memo-box, .components-popover__content .is-style-comment-box, .components-popover__content .is-style-ok-box, .components-popover__content .is-style-ng-box, .components-popover__content .is-style-good-box, .components-popover__content .is-style-bad-box, .components-popover__content .is-style-profile-box, .components-popover__content .information-box, .components-popover__content .question-box, .components-popover__content .alert-box, .components-popover__content .information, .components-popover__content .question, .components-popover__content .alert, .components-popover__content .memo-box, .components-popover__content .comment-box, .components-popover__content .common-icon-box { padding: 20px 20px 20px 72px; border-radius: 4px; position: relative; display: block; }
-.components-popover__content .article blockquote :last-child, .components-popover__content .article .wp-block-media-text__content :last-child, .components-popover__content .article .wp-block-columns :last-child, .components-popover__content .article .column-left :last-child, .components-popover__content .article .column-center :last-child, .components-popover__content .article .column-right :last-child, .components-popover__content .article .column-wrap :last-child, .components-popover__content .article .timeline-box :last-child, .components-popover__content .article .wp-block-cover :last-child, .components-popover__content .article .blogcard-type :last-child, .components-popover__content .article .btn-wrap :last-child, .components-popover__content .article .wp-block-group :last-child, .components-popover__content .article .wp-block-gallery :last-child, .components-popover__content .article .block-box :last-child, .components-popover__content .article .blank-box :last-child, .components-popover__content .article .is-style-blank-box-red :last-child, .components-popover__content .article .is-style-blank-box-navy :last-child, .components-popover__content .article .is-style-blank-box-blue :last-child, .components-popover__content .article .is-style-blank-box-yellow :last-child, .components-popover__content .article .is-style-blank-box-green :last-child, .components-popover__content .article .is-style-blank-box-pink :last-child, .components-popover__content .article .is-style-blank-box-orange :last-child, .components-popover__content .article .is-style-sticky-gray :last-child, .components-popover__content .article .is-style-sticky-yellow :last-child, .components-popover__content .article .is-style-sticky-red :last-child, .components-popover__content .article .is-style-sticky-blue :last-child, .components-popover__content .article .is-style-sticky-green :last-child, .components-popover__content .article .toc :last-child { margin-bottom: 0; }
+.components-popover__content .article blockquote :last-child, .components-popover__content .article .wp-block-media-text__content :last-child, .components-popover__content .article .wp-block-columns :last-child, .components-popover__content .article .column-left :last-child, .components-popover__content .article .column-center :last-child, .components-popover__content .article .column-right :last-child, .components-popover__content .article .column-wrap :last-child, .components-popover__content .article .timeline-box :last-child, .components-popover__content .article .wp-block-cover :last-child, .components-popover__content .article .blogcard-type :last-child, .components-popover__content .article .btn-wrap :last-child, .components-popover__content .article .wp-block-group :last-child, .components-popover__content .article .wp-block-gallery :last-child, .components-popover__content .article .block-box :last-child, .components-popover__content .article .blank-box :last-child, .components-popover__content .article .is-style-blank-box-red :last-child, .components-popover__content .article .is-style-blank-box-navy :last-child, .components-popover__content .article .is-style-blank-box-blue :last-child, .components-popover__content .article .is-style-blank-box-yellow :last-child, .components-popover__content .article .is-style-blank-box-green :last-child, .components-popover__content .article .is-style-blank-box-pink :last-child, .components-popover__content .article .is-style-blank-box-orange :last-child, .components-popover__content .article .is-style-sticky-gray :last-child, .components-popover__content .article .is-style-sticky-yellow :last-child, .components-popover__content .article .is-style-sticky-red :last-child, .components-popover__content .article .is-style-sticky-blue :last-child, .components-popover__content .article .is-style-sticky-green :last-child, .components-popover__content .article .common-icon-box :last-child, .components-popover__content .article .info-box :last-child, .components-popover__content .article .primary-box :last-child, .components-popover__content .article .success-box :last-child, .components-popover__content .article .warning-box :last-child, .components-popover__content .article .danger-box :last-child, .components-popover__content .article .secondary-box :last-child, .components-popover__content .article .light-box :last-child, .components-popover__content .article .dark-box :last-child, .components-popover__content .article .toc :last-child { margin-bottom: 0; }
 .components-popover__content .article div.scrollable-table table, .components-popover__content .article .wp-block-table table { margin-bottom: 0; }
 .components-popover__content .article .wp-block-table .scrollable-table { margin-bottom: 0; }
 .components-popover__content .is-style-information-box, .components-popover__content .information-box, .components-popover__content .information { background: #f3fafe; border: 1px solid #bde4fc; }
@@ -4391,7 +4399,7 @@ textarea[name="the_page_memo"] { width: 100%; }
   .components-popover__content .search-form div.sform { min-width: 180px; }
   .components-popover__content .search-form div.sbtn { padding-left: 5px; padding-right: 10px; }
   .components-popover__content .search-form div.sbtn::after { font-size: 20px; margin-left: -10px; } }
-.components-popover__content .btn-wrap { min-height: 2em; margin: 1.6em 0; }
+.components-popover__content .btn-wrap { min-height: 2em; }
 .components-popover__content .btn-wrap img[width="1"] { position: absolute; bottom: 0; right: 0; }
 .components-popover__content .btn, .components-popover__content .admin-settings .demo .ranking-item-link-buttons a, .admin-settings .demo .ranking-item-link-buttons .components-popover__content a, .components-popover__content .btn-wrap > a, .components-popover__content .wp-block-freeform .btn-wrap > a { color: #fff; background-color: #32373c; font-weight: bold; border-radius: 4px; display: inline-block; cursor: pointer; line-height: normal; padding: 7px 13px; text-decoration: none; text-align: center; font-size: 14px; border: 2px solid transparent; position: relative; }
 .components-popover__content .btn amp-img, .components-popover__content .admin-settings .demo .ranking-item-link-buttons a amp-img, .admin-settings .demo .ranking-item-link-buttons .components-popover__content a amp-img, .components-popover__content .btn-wrap > a amp-img, .components-popover__content .wp-block-freeform .btn-wrap > a amp-img { position: absolute; }
@@ -4464,86 +4472,86 @@ textarea[name="the_page_memo"] { width: 100%; }
 .components-popover__content .micro-copy.alignleft, .components-popover__content .micro-copy.alignright { float: none; }
 .components-popover__content .micro-copy.alignright { margin-left: auto; }
 .components-popover__content .mc-circle { border-radius: 2em; background-clip: padding-box; }
-.components-popover__content .mc-red { background-color: #e60033; color: #fff; border: none; }
-.components-popover__content .mc-red.micro-bottom::after { border-bottom-color: #e60033; border-top-color: transparent; }
-.components-popover__content .mc-red::before { border-top-color: transparent; border-bottom-color: transparent; }
-.components-popover__content .mc-red::after { border-top-color: #e60033; }
-.components-popover__content .mc-pink { background-color: #e95295; color: #fff; border: none; }
-.components-popover__content .mc-pink.micro-bottom::after { border-bottom-color: #e95295; border-top-color: transparent; }
-.components-popover__content .mc-pink::before { border-top-color: transparent; border-bottom-color: transparent; }
-.components-popover__content .mc-pink::after { border-top-color: #e95295; }
-.components-popover__content .mc-purple { background-color: #884898; color: #fff; border: none; }
-.components-popover__content .mc-purple.micro-bottom::after { border-bottom-color: #884898; border-top-color: transparent; }
-.components-popover__content .mc-purple::before { border-top-color: transparent; border-bottom-color: transparent; }
-.components-popover__content .mc-purple::after { border-top-color: #884898; }
-.components-popover__content .mc-blue { background-color: #0095d9; color: #fff; border: none; }
-.components-popover__content .mc-blue.micro-bottom::after { border-bottom-color: #0095d9; border-top-color: transparent; }
-.components-popover__content .mc-blue::before { border-top-color: transparent; border-bottom-color: transparent; }
-.components-popover__content .mc-blue::after { border-top-color: #0095d9; }
-.components-popover__content .mc-green { background-color: #3eb370; color: #fff; border: none; }
-.components-popover__content .mc-green.micro-bottom::after { border-bottom-color: #3eb370; border-top-color: transparent; }
-.components-popover__content .mc-green::before { border-top-color: transparent; border-bottom-color: transparent; }
-.components-popover__content .mc-green::after { border-top-color: #3eb370; }
-.components-popover__content .mc-orange { background-color: #f39800; color: #fff; border: none; }
-.components-popover__content .mc-orange.micro-bottom::after { border-bottom-color: #f39800; border-top-color: transparent; }
-.components-popover__content .mc-orange::before { border-top-color: transparent; border-bottom-color: transparent; }
-.components-popover__content .mc-orange::after { border-top-color: #f39800; }
-.components-popover__content .mc-yellow { background-color: #ffd900; color: #fff; border: none; }
-.components-popover__content .mc-yellow.micro-bottom::after { border-bottom-color: #ffd900; border-top-color: transparent; }
-.components-popover__content .mc-yellow::before { border-top-color: transparent; border-bottom-color: transparent; }
-.components-popover__content .mc-yellow::after { border-top-color: #ffd900; }
-.components-popover__content .mc-brown { background-color: #954e2a; color: #fff; border: none; }
-.components-popover__content .mc-brown.micro-bottom::after { border-bottom-color: #954e2a; border-top-color: transparent; }
-.components-popover__content .mc-brown::before { border-top-color: transparent; border-bottom-color: transparent; }
-.components-popover__content .mc-brown::after { border-top-color: #954e2a; }
-.components-popover__content .mc-grey { background-color: #949495; color: #fff; border: none; }
-.components-popover__content .mc-grey.micro-bottom::after { border-bottom-color: #949495; border-top-color: transparent; }
-.components-popover__content .mc-grey::before { border-top-color: transparent; border-bottom-color: transparent; }
-.components-popover__content .mc-grey::after { border-top-color: #949495; }
-.components-popover__content .mc-black { background-color: #333; color: #fff; border: none; }
-.components-popover__content .mc-black.micro-bottom::after { border-bottom-color: #333; border-top-color: transparent; }
-.components-popover__content .mc-black::before { border-top-color: transparent; border-bottom-color: transparent; }
-.components-popover__content .mc-black::after { border-top-color: #333; }
-.components-popover__content .mc-deep { background-color: #55295b; color: #fff; border: none; }
-.components-popover__content .mc-deep.micro-bottom::after { border-bottom-color: #55295b; border-top-color: transparent; }
-.components-popover__content .mc-deep::before { border-top-color: transparent; border-bottom-color: transparent; }
-.components-popover__content .mc-deep::after { border-top-color: #55295b; }
-.components-popover__content .mc-indigo { background-color: #1e50a2; color: #fff; border: none; }
-.components-popover__content .mc-indigo.micro-bottom::after { border-bottom-color: #1e50a2; border-top-color: transparent; }
-.components-popover__content .mc-indigo::before { border-top-color: transparent; border-bottom-color: transparent; }
-.components-popover__content .mc-indigo::after { border-top-color: #1e50a2; }
-.components-popover__content .mc-light-blue { background-color: #2ca9e1; color: #fff; border: none; }
-.components-popover__content .mc-light-blue.micro-bottom::after { border-bottom-color: #2ca9e1; border-top-color: transparent; }
-.components-popover__content .mc-light-blue::before { border-top-color: transparent; border-bottom-color: transparent; }
-.components-popover__content .mc-light-blue::after { border-top-color: #2ca9e1; }
-.components-popover__content .mc-cyan { background-color: #00a3af; color: #fff; border: none; }
-.components-popover__content .mc-cyan.micro-bottom::after { border-bottom-color: #00a3af; border-top-color: transparent; }
-.components-popover__content .mc-cyan::before { border-top-color: transparent; border-bottom-color: transparent; }
-.components-popover__content .mc-cyan::after { border-top-color: #00a3af; }
-.components-popover__content .mc-teal { background-color: #007b43; color: #fff; border: none; }
-.components-popover__content .mc-teal.micro-bottom::after { border-bottom-color: #007b43; border-top-color: transparent; }
-.components-popover__content .mc-teal::before { border-top-color: transparent; border-bottom-color: transparent; }
-.components-popover__content .mc-teal::after { border-top-color: #007b43; }
-.components-popover__content .mc-light-green { background-color: #8bc34a; color: #fff; border: none; }
-.components-popover__content .mc-light-green.micro-bottom::after { border-bottom-color: #8bc34a; border-top-color: transparent; }
-.components-popover__content .mc-light-green::before { border-top-color: transparent; border-bottom-color: transparent; }
-.components-popover__content .mc-light-green::after { border-top-color: #8bc34a; }
-.components-popover__content .mc-lime { background-color: #c3d825; color: #fff; border: none; }
-.components-popover__content .mc-lime.micro-bottom::after { border-bottom-color: #c3d825; border-top-color: transparent; }
-.components-popover__content .mc-lime::before { border-top-color: transparent; border-bottom-color: transparent; }
-.components-popover__content .mc-lime::after { border-top-color: #c3d825; }
-.components-popover__content .mc-amber { background-color: #ffc107; color: #fff; border: none; }
-.components-popover__content .mc-amber.micro-bottom::after { border-bottom-color: #ffc107; border-top-color: transparent; }
-.components-popover__content .mc-amber::before { border-top-color: transparent; border-bottom-color: transparent; }
-.components-popover__content .mc-amber::after { border-top-color: #ffc107; }
-.components-popover__content .mc-deep-orange { background-color: #ea5506; color: #fff; border: none; }
-.components-popover__content .mc-deep-orange.micro-bottom::after { border-bottom-color: #ea5506; border-top-color: transparent; }
-.components-popover__content .mc-deep-orange::before { border-top-color: transparent; border-bottom-color: transparent; }
-.components-popover__content .mc-deep-orange::after { border-top-color: #ea5506; }
-.components-popover__content .mc-white { background-color: #fff; color: #fff; border: none; }
-.components-popover__content .mc-white.micro-bottom::after { border-bottom-color: #fff; border-top-color: transparent; }
-.components-popover__content .mc-white::before { border-top-color: transparent; border-bottom-color: transparent; }
-.components-popover__content .mc-white::after { border-top-color: #fff; }
+.components-popover__content .micro-balloon.mc-red { background-color: #e60033; color: #fff; border: none; }
+.components-popover__content .micro-balloon.mc-red.micro-bottom::after { border-bottom-color: #e60033; border-top-color: transparent; }
+.components-popover__content .micro-balloon.mc-red::before { border-top-color: transparent; border-bottom-color: transparent; }
+.components-popover__content .micro-balloon.mc-red::after { border-top-color: #e60033; }
+.components-popover__content .micro-balloon.mc-pink { background-color: #e95295; color: #fff; border: none; }
+.components-popover__content .micro-balloon.mc-pink.micro-bottom::after { border-bottom-color: #e95295; border-top-color: transparent; }
+.components-popover__content .micro-balloon.mc-pink::before { border-top-color: transparent; border-bottom-color: transparent; }
+.components-popover__content .micro-balloon.mc-pink::after { border-top-color: #e95295; }
+.components-popover__content .micro-balloon.mc-purple { background-color: #884898; color: #fff; border: none; }
+.components-popover__content .micro-balloon.mc-purple.micro-bottom::after { border-bottom-color: #884898; border-top-color: transparent; }
+.components-popover__content .micro-balloon.mc-purple::before { border-top-color: transparent; border-bottom-color: transparent; }
+.components-popover__content .micro-balloon.mc-purple::after { border-top-color: #884898; }
+.components-popover__content .micro-balloon.mc-blue { background-color: #0095d9; color: #fff; border: none; }
+.components-popover__content .micro-balloon.mc-blue.micro-bottom::after { border-bottom-color: #0095d9; border-top-color: transparent; }
+.components-popover__content .micro-balloon.mc-blue::before { border-top-color: transparent; border-bottom-color: transparent; }
+.components-popover__content .micro-balloon.mc-blue::after { border-top-color: #0095d9; }
+.components-popover__content .micro-balloon.mc-green { background-color: #3eb370; color: #fff; border: none; }
+.components-popover__content .micro-balloon.mc-green.micro-bottom::after { border-bottom-color: #3eb370; border-top-color: transparent; }
+.components-popover__content .micro-balloon.mc-green::before { border-top-color: transparent; border-bottom-color: transparent; }
+.components-popover__content .micro-balloon.mc-green::after { border-top-color: #3eb370; }
+.components-popover__content .micro-balloon.mc-orange { background-color: #f39800; color: #fff; border: none; }
+.components-popover__content .micro-balloon.mc-orange.micro-bottom::after { border-bottom-color: #f39800; border-top-color: transparent; }
+.components-popover__content .micro-balloon.mc-orange::before { border-top-color: transparent; border-bottom-color: transparent; }
+.components-popover__content .micro-balloon.mc-orange::after { border-top-color: #f39800; }
+.components-popover__content .micro-balloon.mc-yellow { background-color: #ffd900; color: #fff; border: none; }
+.components-popover__content .micro-balloon.mc-yellow.micro-bottom::after { border-bottom-color: #ffd900; border-top-color: transparent; }
+.components-popover__content .micro-balloon.mc-yellow::before { border-top-color: transparent; border-bottom-color: transparent; }
+.components-popover__content .micro-balloon.mc-yellow::after { border-top-color: #ffd900; }
+.components-popover__content .micro-balloon.mc-brown { background-color: #954e2a; color: #fff; border: none; }
+.components-popover__content .micro-balloon.mc-brown.micro-bottom::after { border-bottom-color: #954e2a; border-top-color: transparent; }
+.components-popover__content .micro-balloon.mc-brown::before { border-top-color: transparent; border-bottom-color: transparent; }
+.components-popover__content .micro-balloon.mc-brown::after { border-top-color: #954e2a; }
+.components-popover__content .micro-balloon.mc-grey { background-color: #949495; color: #fff; border: none; }
+.components-popover__content .micro-balloon.mc-grey.micro-bottom::after { border-bottom-color: #949495; border-top-color: transparent; }
+.components-popover__content .micro-balloon.mc-grey::before { border-top-color: transparent; border-bottom-color: transparent; }
+.components-popover__content .micro-balloon.mc-grey::after { border-top-color: #949495; }
+.components-popover__content .micro-balloon.mc-black { background-color: #333; color: #fff; border: none; }
+.components-popover__content .micro-balloon.mc-black.micro-bottom::after { border-bottom-color: #333; border-top-color: transparent; }
+.components-popover__content .micro-balloon.mc-black::before { border-top-color: transparent; border-bottom-color: transparent; }
+.components-popover__content .micro-balloon.mc-black::after { border-top-color: #333; }
+.components-popover__content .micro-balloon.mc-deep { background-color: #55295b; color: #fff; border: none; }
+.components-popover__content .micro-balloon.mc-deep.micro-bottom::after { border-bottom-color: #55295b; border-top-color: transparent; }
+.components-popover__content .micro-balloon.mc-deep::before { border-top-color: transparent; border-bottom-color: transparent; }
+.components-popover__content .micro-balloon.mc-deep::after { border-top-color: #55295b; }
+.components-popover__content .micro-balloon.mc-indigo { background-color: #1e50a2; color: #fff; border: none; }
+.components-popover__content .micro-balloon.mc-indigo.micro-bottom::after { border-bottom-color: #1e50a2; border-top-color: transparent; }
+.components-popover__content .micro-balloon.mc-indigo::before { border-top-color: transparent; border-bottom-color: transparent; }
+.components-popover__content .micro-balloon.mc-indigo::after { border-top-color: #1e50a2; }
+.components-popover__content .micro-balloon.mc-light-blue { background-color: #2ca9e1; color: #fff; border: none; }
+.components-popover__content .micro-balloon.mc-light-blue.micro-bottom::after { border-bottom-color: #2ca9e1; border-top-color: transparent; }
+.components-popover__content .micro-balloon.mc-light-blue::before { border-top-color: transparent; border-bottom-color: transparent; }
+.components-popover__content .micro-balloon.mc-light-blue::after { border-top-color: #2ca9e1; }
+.components-popover__content .micro-balloon.mc-cyan { background-color: #00a3af; color: #fff; border: none; }
+.components-popover__content .micro-balloon.mc-cyan.micro-bottom::after { border-bottom-color: #00a3af; border-top-color: transparent; }
+.components-popover__content .micro-balloon.mc-cyan::before { border-top-color: transparent; border-bottom-color: transparent; }
+.components-popover__content .micro-balloon.mc-cyan::after { border-top-color: #00a3af; }
+.components-popover__content .micro-balloon.mc-teal { background-color: #007b43; color: #fff; border: none; }
+.components-popover__content .micro-balloon.mc-teal.micro-bottom::after { border-bottom-color: #007b43; border-top-color: transparent; }
+.components-popover__content .micro-balloon.mc-teal::before { border-top-color: transparent; border-bottom-color: transparent; }
+.components-popover__content .micro-balloon.mc-teal::after { border-top-color: #007b43; }
+.components-popover__content .micro-balloon.mc-light-green { background-color: #8bc34a; color: #fff; border: none; }
+.components-popover__content .micro-balloon.mc-light-green.micro-bottom::after { border-bottom-color: #8bc34a; border-top-color: transparent; }
+.components-popover__content .micro-balloon.mc-light-green::before { border-top-color: transparent; border-bottom-color: transparent; }
+.components-popover__content .micro-balloon.mc-light-green::after { border-top-color: #8bc34a; }
+.components-popover__content .micro-balloon.mc-lime { background-color: #c3d825; color: #fff; border: none; }
+.components-popover__content .micro-balloon.mc-lime.micro-bottom::after { border-bottom-color: #c3d825; border-top-color: transparent; }
+.components-popover__content .micro-balloon.mc-lime::before { border-top-color: transparent; border-bottom-color: transparent; }
+.components-popover__content .micro-balloon.mc-lime::after { border-top-color: #c3d825; }
+.components-popover__content .micro-balloon.mc-amber { background-color: #ffc107; color: #fff; border: none; }
+.components-popover__content .micro-balloon.mc-amber.micro-bottom::after { border-bottom-color: #ffc107; border-top-color: transparent; }
+.components-popover__content .micro-balloon.mc-amber::before { border-top-color: transparent; border-bottom-color: transparent; }
+.components-popover__content .micro-balloon.mc-amber::after { border-top-color: #ffc107; }
+.components-popover__content .micro-balloon.mc-deep-orange { background-color: #ea5506; color: #fff; border: none; }
+.components-popover__content .micro-balloon.mc-deep-orange.micro-bottom::after { border-bottom-color: #ea5506; border-top-color: transparent; }
+.components-popover__content .micro-balloon.mc-deep-orange::before { border-top-color: transparent; border-bottom-color: transparent; }
+.components-popover__content .micro-balloon.mc-deep-orange::after { border-top-color: #ea5506; }
+.components-popover__content .micro-balloon.mc-white { background-color: #fff; color: #fff; border: none; }
+.components-popover__content .micro-balloon.mc-white.micro-bottom::after { border-bottom-color: #fff; border-top-color: transparent; }
+.components-popover__content .micro-balloon.mc-white::before { border-top-color: transparent; border-bottom-color: transparent; }
+.components-popover__content .micro-balloon.mc-white::after { border-top-color: #fff; }
 .components-popover__content .blogcard-label { position: absolute; top: -18px; left: 16px; font-size: 13px; padding: 3px 0.6em; background-color: #333; color: #fff; border-radius: 3px; letter-spacing: 0.7px; display: none; }
 .components-popover__content .blogcard-label .fa::before { margin-right: 6px; }
 .components-popover__content .blogcard-type .blogcard-label { display: block; }
@@ -4779,6 +4787,7 @@ textarea[name="the_page_memo"] { width: 100%; }
 .components-popover__content .wp-block-separator.is-style-wide { border-bottom: solid 3px !important; }
 @media screen and (min-width: 600px) and (max-width: 781px) { .components-popover__content .article .wp-block-columns :nth-child(odd):nth-last-child(2) { margin-bottom: 0; } }
 @media screen and (min-width: 600px) { .components-popover__content .column-wrap > * { margin-bottom: 0 !important; } }
+.components-popover__content .body .wp-block-gallery .blocks-gallery-item { margin-bottom: 1em; }
 .components-popover__content .red { margin: 0; }
 .components-popover__content .fz-12px { font-size: 12px; }
 .components-popover__content .fz-13px { font-size: 13px; }
