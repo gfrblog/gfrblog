@@ -50,8 +50,9 @@ Version:    1.1.2
   min-width: 120px;
 }
 .eye-catch .cat-label:before {
-  font-family: "fontawesome";
-  content: "\f040";
+  font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+  content: "\f303";
   color: #fff;
   display: inline-block;
   margin-right: .5em;
@@ -219,6 +220,51 @@ blockquote:after{ /*下の引用アイコン*/
 #main .sns-follow a {
 	width: 40px; /*ボタンの横幅*/
 	height: 40px; /*ボタンの高さ*/
+}
+
+/************************************
+** 高度な設定で指定したCSSクラス関連
+************************************/
+/* bullets-design1 */
+.bullets-design1{
+  width: 90%;
+  margin: 0 5%;
+  display: table;
+  padding: 0.2em 0.5em;
+  position: relative;
+  padding: 0.5em 1em;
+  border: solid 3px #324851;
+  border-radius: 8px;
+  background: #fdf5eb;
+}
+.bullets-design1-title{
+  position: absolute;
+  display: inline-block;
+  top: -13px;
+  left: 15px;
+  padding: 0 1%;
+  line-height: 1;
+  font-size: 20px;
+  background: linear-gradient(180deg,#fff 0%,#fff 50%,#fdf5eb 50%,#fdf5eb 100%);
+  color: #324851;
+  font-weight: bold;
+}
+.bullets-design1 > div > ul{
+  margin-left: 1em;
+  margin-bottom: 0;
+  position: relative;
+}
+.bullets-design1 > div > ul > li {
+  line-height: 1.5;
+  padding: 0.5em 0;
+  list-style-type: none!important;/*ポチ消す*/
+}
+.bullets-design1 > div > ul > li:before{
+  font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+  content: "\f138";
+  position: absolute;
+  left : 0.5em;
 }
 
 
