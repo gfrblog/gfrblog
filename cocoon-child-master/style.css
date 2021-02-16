@@ -266,6 +266,14 @@ blockquote:after{ /*下の引用アイコン*/
   position: absolute;
   left : 0.5em;
 }
+/* 下線 */
+.marker-under-green {
+background: linear-gradient(transparent 60%, #98fb98 20%);
+}
+.marker-under-brown {
+background: linear-gradient(transparent 60%, #f5c58a 20%);
+}
+
 
 
 /************************************
