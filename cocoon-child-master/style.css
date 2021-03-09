@@ -615,6 +615,44 @@ div.admin-pv{/*閲覧数を非表示*/
   main.main, div.sidebar {/*モバイル表示などの本文全体の周りの空白にも影響している*/
   padding:0;
 }}
+/* サイドバー検索ボックス */
+.sidebar .search-box, .search-menu-content .search-box {
+  width: 100%;
+  margin: 1em 0 2em;
+  position: relative;
+  display: flex;
+  border: solid;
+  border-radius: 50px; /*全体を囲むボックスの角丸*/
+  border-color: #000;
+}
+.sidebar .search-edit, .search-menu-content .search-edit {
+  width: 80%; /*入力部分の長さ*/
+  background: #F4F5F7; /*入力部分の背景色*/
+  padding: 0 10px;
+  border: none; /*ボーダーを消す*/
+  border-radius: 50px 0 0 50px; /*左上、左下のみ角丸*/
+  font-size: 16px;
+}
+.search-submit {
+  width: 20%; /*ボタン部分の長さ*/
+  background: #000; /*ボタン部分の背景色*/
+  position: static;
+  right: auto;
+  top: auto;
+  font-size: 20px; /*アイコンの大きさ*/
+  cursor: pointer;
+  line-height: 40px; /*検索窓の高さ*/
+  border: none;
+  border-radius: 0 50px 50px 0; /*右上、右下のみ角丸*/
+  padding: 0;
+}
+.search-box input::placeholder {
+  color: #bbb; /*プレースホルダーの色*/
+}
+.search-box input:focus, .search-box button:focus {
+  outline: 0; /*フォーカス時の枠線を消す*/
+}
+
 
 /************************************
 ** レスポンシブデザイン用のメディアクエリ

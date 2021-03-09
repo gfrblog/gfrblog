@@ -1,0 +1,37 @@
+.each-member-wrap .member-detail{
+  border: dashed 1.5px #20948b;
+  padding: 4px;
+  border-radius: 10px;/*角の丸み*/
+}
+.each-member-wrap .member-name{
+  margin-bottom: 5px;
+}
+.each-member-wrap .member-name span{
+  font-size: 20px;
+}
+.each-member-wrap .member-name span:before {
+  font-family: "Font Awesome 5 Free";
+  white-space: pre-wrap;
+  content: "・";
+}
+.each-member-wrap .member-feature{
+  font-size: 14px;
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 10px;
+}
+.each-member-wrap .member-feature div{
+  padding-left: 1em;
+}
+
+.each-member-wrap .member-hr{
+  width: 95%;
+	border-width: 1px 0 0 0;
+	border-style: solid;
+  margin: auto;
+  border-color: #ada9a9;
+  margin-bottom: 10px;
+}
+.each-member-wrap .member-introduction{
+  font-size: 14px;
+}
