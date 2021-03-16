@@ -331,15 +331,15 @@ background: linear-gradient(transparent 60%, #f5c58a 20%);
   white-space: pre-wrap;
   content: "\f57d   ";
 }
-#menu-item-44 .item-label:before {
-  font-family: "Font Awesome 5 Free";
-  white-space: pre-wrap;
-  content: "\f0c0   ";
-}
 #menu-item-46 .item-label:before {
   font-family: "Font Awesome 5 Free";
   white-space: pre-wrap;
   content: "\f521   ";
+}
+#menu-item-729 .item-label:before {
+  font-family: "Font Awesome 5 Free";
+  white-space: pre-wrap;
+  content: "\f0c0   ";
 }
 #menu-item-36 .item-label:before {
   font-family: "Font Awesome 5 Free";
@@ -652,6 +652,14 @@ div.admin-pv{/*閲覧数を非表示*/
 .search-box input:focus, .search-box button:focus {
   outline: 0; /*フォーカス時の枠線を消す*/
 }
+
+/************************************
+** メンバーページのデザイン関連
+************************************/
+body.page-id-666 .main{
+	background-color: #F4F5F7 !important;
+}
+
 
 
 /************************************

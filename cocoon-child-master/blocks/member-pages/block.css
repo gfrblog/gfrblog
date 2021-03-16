@@ -3,6 +3,13 @@
   padding: 4px;
   border-radius: 10px;/*角の丸み*/
 }
+.each-member-wrap .member-figure-div{
+  width: 100%;
+  text-align: center;
+}
+.each-member-wrap .member-figure{
+  border-radius: 50%;
+}
 .each-member-wrap .member-name{
   margin-bottom: 5px;
 }
@@ -18,7 +25,7 @@
   font-size: 14px;
   list-style: none;
   padding-left: 0;
-  margin-bottom: 10px;
+  margin-bottom: 0;
 }
 .each-member-wrap .member-feature div{
   padding-left: 1em;
@@ -34,4 +41,53 @@
 }
 .each-member-wrap .member-introduction{
   font-size: 14px;
+}
+
+
+/* snsボタン */
+/* ボタン右寄せ横並び */
+.each-member-wrap .member-sns{
+  display:flex;
+  flex-flow:row-reverse wrap;
+  justify-content: flex-start;
+  padding:0!important;
+  margin-bottom: 5px;
+  font-size: 10px;
+}
+/* ボタンデザイン */
+.each-member-wrap .member-sns .flowbtn11{
+  display: inline-block;
+  width: 70px;
+  height: 17px;
+  border-radius:4px;
+  color:#fff!important;
+  text-decoration: none;
+  text-align: center;
+}
+/* リストスタイル */
+.each-member-wrap .member-sns li{
+  list-style: none;
+}
+/* ホバー時 */
+.each-member-wrap .member-sns .flowbtn11:hover{
+  opacity: 0.7 ;
+  transition: 0.2s;
+}
+/* Twitter */
+.each-member-wrap .fl_tw1{
+  background:#55acee;
+}
+/* Facebook */
+.each-member-wrap .fl_fb1{
+  background:#3b5998;
+}
+/* Instagram */
+.each-member-wrap .insta_btn1 .fa-instagram{
+  position:relative;
+  z-index:1;
+}
+.each-member-wrap .insta_btn1{
+  background:-webkit-linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+  background:linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+  overflow:hidden;
 }
