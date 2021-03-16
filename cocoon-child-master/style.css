@@ -346,10 +346,10 @@ background: linear-gradient(transparent 60%, #f5c58a 20%);
   white-space: pre-wrap;
   content: "\f0ca   ";
 }
-#menu-item-72 .item-label:before {
+#menu-item-768 .item-label:before {
   font-family: "Font Awesome 5 Free";
   white-space: pre-wrap;
-  content: "\f302   ";
+  content: "\f0e0   ";
 }
 /* メニューの文字位置を上下中央にする */
 .caption-wrap {
@@ -475,6 +475,7 @@ body.home .main,.category .main,.tag .main{
 	background-color: #F4F5F7 !important;
 }
 div.index-tab-buttons .index-tab-button{
+  cursor: default;
   background-color: #fff !important;
   color: #20948b;
   font-size: 22px;
@@ -660,8 +661,25 @@ body.page-id-666 .main{
 	background-color: #F4F5F7 !important;
 }
 
-
-
+/************************************
+** お問い合わせページ
+************************************/
+.wpcf7 input[type="submit"] {
+  cursor: pointer;
+  background-color: black;
+  color: #fff;
+  font-size: 18px;
+  width: 30%;
+  text-align: center;
+  margin-left: 35%;
+  border-radius: 4px;
+}
+.wpcf7 input[type="submit"]:hover {
+  box-shadow: 0 0 2px 2px rgba(133, 112, 92, 0.5);
+  background-color: #fff;
+  color: #6c5d2f;
+  transition: all .25s;
+}
 /************************************
 ** レスポンシブデザイン用のメディアクエリ
 ************************************/
