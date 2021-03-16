@@ -458,9 +458,6 @@
 }
 div.mce-content-body {
   line-height: 1.8;
-}
-div.mce-content-body div.mce-content-body {
-  line-height: 1.8;
   padding-top: 1em;
 }
 
@@ -1006,10 +1003,6 @@ ol, ul {
 
 .editor-styles-wrapper .article .iconlist-box ul li, .editor-styles-wrapper .article .iconlist-box ol li {
   margin: 0;
-}
-
-.wp-block .widget.open {
-  margin-left: 0;
 }
 
 .micro-content {

@@ -1896,7 +1896,9 @@ function wp_filesystem_get_contents($file, $is_exfile = false, $credentials_enab
   );
 
   if (!$is_exfile) {//ローカル
-    return file_get_contents($file);
+    if (!is_dir($file)) {
+      return file_get_contents($file);
+    }
   } else {//外部URL
     return @file_get_contents($file, false, stream_context_create($options));
   }
@@ -3385,7 +3387,22 @@ if ( !function_exists( 'get_termmeta_value_enable_ids' ) ):
 function get_termmeta_value_enable_ids($meta_key){
   global $wpdb;
   $res = $wpdb->get_results("SELECT DISTINCT GROUP_CONCAT(term_id) AS ids FROM {$wpdb->prefix}termmeta WHERE (meta_key = '{$meta_key}') AND (meta_value = 1)");
-  $result = (isset($res[0]) && $res[0]->ids) ? explode(',', $res[0]->ids) : array();
+  $ids = (isset($res[0]) && $res[0]->ids) ? explode(',', $res[0]->ids) : array();
+  $result = array();
+  if ($meta_key === 'the_category_noindex') {
+    foreach ($ids as $id) {
+      if (get_category($id)) {
+        array_push($result, $id);
+      }
+    }
+  }
+  if ($meta_key === 'the_tag_noindex') {
+    foreach ($ids as $id) {
+      if (get_tag($id)) {
+        array_push($result, $id);
+      }
+    }
+  }
   return $result;
 }
 endif;
@@ -3416,5 +3433,12 @@ if ( !function_exists( 'use_gutenberg_editor' ) ):
 function use_gutenberg_editor(){
   $current_screen = get_current_screen();
   return ( method_exists( $current_screen, 'is_block_editor' ) && $current_screen->is_block_editor() ) || ( function_exists( 'is_gutenberg_page' ) && is_gutenberg_page() );
+}
+endif;
+
+//ピクセル数を数字にする
+if ( !function_exists( 'px_to_int' ) ):
+function px_to_int($px){
+  return intval(str_replace('px', '', $px));
 }
 endif;
