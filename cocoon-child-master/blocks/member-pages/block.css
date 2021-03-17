@@ -39,7 +39,16 @@
   border-color: #ada9a9;
   margin-bottom: 10px;
 }
-.each-member-wrap .member-introduction{
+.each-member-wrap .member-introduction, .member-article-link{
+  font-size: 14px;
+}
+.each-member-wrap .member-article-link{
+  text-align: right;
+}
+.each-member-wrap .member-article-link span:before{
+  font-family: "Font Awesome 5 Free";
+  white-space: pre-wrap;
+  content: "\f0a4   ";
   font-size: 14px;
 }
 
