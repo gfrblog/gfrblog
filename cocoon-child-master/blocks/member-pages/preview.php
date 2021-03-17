@@ -23,6 +23,6 @@
     </ul>
     <hr class="member-hr" />
     <div class="member-introduction"><?php block_field( 'member-introduction' ); ?></div>
-    <div class="member-introduction">→<a href=<?php block_field( 'member-article' ); ?>><?php block_field( 'member-name' ); ?>の人生についてもっと詳しく</a></div>
+    <div class="member-introduction">→<a href=<?php block_field( 'member-article' ); ?>><?php block_field( 'member-name' ); ?>についてもっと詳しく</a></div>
   </div>
 </div>
