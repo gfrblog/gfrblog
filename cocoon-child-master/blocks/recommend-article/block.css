@@ -1,0 +1,31 @@
+.recommend-article-box {
+  position: relative;
+  margin: 2em 0;
+  padding: 1em 1em;
+  background-color: #fdf5eb;
+  border: solid 2px black;
+}
+.recommend-article-box .recommend-article-check {
+  position: absolute;
+  display: inline-block;
+  top: -27px;
+  left: -2px;
+  padding: 0 9px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 17px;
+  background: black;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 5px 5px 0 0;
+}
+.recommend-article-name {
+  margin-left: 2em;
+  padding: 0;
+  font-size: 22px;
+}
+.recommend-article-name:before{
+  font-family: "Font Awesome 5 Free";
+  white-space: pre-wrap;
+  content: "\f0a4   ";
+}
