@@ -664,10 +664,6 @@ body.page-id-744 .main{
 /************************************
 ** お問い合わせページ
 ************************************/
-.wpcf7-form{
-  width: 90%;
-  margin-left: 5%;
-}
 .wpcf7 input[type="submit"] {
   cursor: pointer;
   background-color: black;
@@ -695,9 +691,17 @@ body.page-id-744 .main{
 /*834px以下*/
 @media screen and (max-width: 834px){
   /*必要ならばここにコードを書く*/
+  .main{
+    /* width: 95% !important; */
+    padding: 0 5px !important;
+  }
 }
 
 /*480px以下*/
 @media screen and (max-width: 480px){
   /*必要ならばここにコードを書く*/
+  .main{
+    /* width: 95% !important; */
+    padding: 0 3px !important;
+  }
 }
