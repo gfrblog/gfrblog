@@ -7,7 +7,7 @@
     <div class="member-name"><span><?php block_field( 'member-name' ); ?></span></div>
     <ul class="member-feature">
     <li>やりたいこと<div><?php block_field( 'member-goal' ); ?></div></li>
-    <li>大切にしていること<div><?php block_field( 'member-action' ); ?></div></li>
+    <li>大切にしたいこと<div><?php block_field( 'member-action' ); ?></div></li>
     <li>専攻<div><?php block_field( 'member-major' ); ?></div></li>
     </ul>
     <ul class="member-sns">
